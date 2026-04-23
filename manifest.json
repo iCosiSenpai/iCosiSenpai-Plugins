@@ -28,12 +28,12 @@
     "owner": "KometaThemes",
     "versions": [
       {
-        "checksum": "166CBCB8B5067346B92E3C6B4AC057B6",
-        "changelog": "Fixed config save loop, removed provider priority UI, simplified settings page.",
+        "checksum": "AB05CF8A6C14E0FCCBB8A98E87006B18",
+        "changelog": "Fixed unhandled Javascript exceptions on undefined configuration properties and added safe XML serialization for collections.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.8.3.0/KometaThemes.zip",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.8.4.0/KometaThemes.zip",
         "timestamp": "2026-04-23T00:00:00Z",
-        "version": "0.8.3.0"
+        "version": "0.8.4.0"
       }
     ]
   }
