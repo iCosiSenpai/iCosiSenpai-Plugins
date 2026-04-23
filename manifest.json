@@ -28,6 +28,14 @@
     "owner": "KometaThemes",
     "versions": [
       {
+        "checksum": "5E1D69B4C7D6B0FEBD7CD03ED176AC1D",
+        "changelog": "0.9.2 release: Improved library scanning reliability and fixed ForceSync logic. Broadened compatibility for Jellyfin 10.9+.",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.9.2.0/KometaThemes.zip",
+        "timestamp": "2026-04-24T00:10:00Z",
+        "version": "0.9.2.0"
+      },
+      {
         "checksum": "69DE6DA28B7408DC2FF5E17B39D69A10",
         "changelog": "0.9 release: provider priority is now configurable from the UI, cache stats are live with a clear action, FetchType parsing is tolerant, and AniSearch priority is normalized correctly.",
         "targetAbi": "10.11.8.0",
