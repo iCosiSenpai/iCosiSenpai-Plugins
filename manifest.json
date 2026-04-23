@@ -28,12 +28,12 @@
     "owner": "KometaThemes",
     "versions": [
       {
-        "checksum": "AB05CF8A6C14E0FCCBB8A98E87006B18",
-        "changelog": "Fixed unhandled Javascript exceptions on undefined configuration properties and added safe XML serialization for collections.",
+        "checksum": "124A4970B34C3711636646C0B7EB297F",
+        "changelog": "Fixed config save error: FetchType enum now sent as string (None/Single/All) to match Jellyfin JSON deserialization.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.8.4.0/KometaThemes.zip",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.8.5.0/KometaThemes.zip",
         "timestamp": "2026-04-23T00:00:00Z",
-        "version": "0.8.4.0"
+        "version": "0.8.5.0"
       }
     ]
   }
