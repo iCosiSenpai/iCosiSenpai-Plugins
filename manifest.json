@@ -28,12 +28,12 @@
     "owner": "KometaThemes",
     "versions": [
       {
-        "checksum": "FADEBCB12568868D0B6575AA6A13247B",
-        "changelog": "Initial release with multi-provider support, fuzzy title fallback, persistent cache, rate limiting.",
+        "checksum": "2A420AD21137699D75E0DF643AEDEEE4",
+        "changelog": "Fixed bilingual config page: single set of inputs with swappable labels instead of duplicated fields.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.8.1.0/KometaThemes.zip",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.8.2.0/KometaThemes.zip",
         "timestamp": "2026-04-23T00:00:00Z",
-        "version": "0.8.1.0"
+        "version": "0.8.2.0"
       }
     ]
   }
