@@ -28,7 +28,7 @@
     "owner": "KometaThemes",
     "versions": [
       {
-        "checksum": "",
+        "checksum": "FADEBCB12568868D0B6575AA6A13247B",
         "changelog": "Initial release with multi-provider support, fuzzy title fallback, persistent cache, rate limiting.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.8.1.0/KometaThemes.zip",
