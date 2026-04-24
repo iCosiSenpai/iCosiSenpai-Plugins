@@ -28,6 +28,22 @@
     "owner": "KometaThemes",
     "versions": [
       {
+        "checksum": "e617c2acc5f8fec4694a20d26bfd82c8",
+        "changelog": "0.9.6.0 release: Added an interactive 'Manual Identification' dashboard in the configuration page for unmatched anime, complete with real-time search.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.9.6.0/KometaThemes.zip",
+        "timestamp": "2026-04-24T17:15:00Z",
+        "version": "0.9.6.0"
+      },
+      {
+        "checksum": "3e4184fce7a41e84cc557e732c828d62",
+        "changelog": "0.9.5.0 release: Refactored to use .NET modern patterns and best practices. Added primary constructors, IHttpClientFactory, and removed redundant implementations.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.9.5.0/KometaThemes.zip",
+        "timestamp": "2026-04-24T16:40:00Z",
+        "version": "0.9.5.0"
+      },
+      {
         "checksum": "E419634DD3AA368F3DA5CDE176CA09CA",
         "changelog": "0.9.2 release: Improved library scanning reliability and fixed ForceSync logic. Broadened compatibility for Jellyfin 10.9+.",
         "targetAbi": "10.11.8.0",
