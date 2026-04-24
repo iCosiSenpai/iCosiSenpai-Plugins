@@ -28,12 +28,12 @@
         "owner": "KometaThemes",
         "versions": [
             {
-                "checksum": "6596fe2bd06c2bf86a3276f9b242e7cd",
-                "changelog": "1.0.2: Rebuilt release package with the settings page fix, XML-safe configuration, and corrected release metadata.",
+                "checksum": "91a01683191f2c04c9ce1107f540e8c0",
+                "changelog": "1.0.2.1: Fixed stale assembly version metadata, aligned Jellyfin SDK packages with target ABI, and moved to a clean KometaThemes.xml configuration file to bypass old corrupt config XML.",
                 "targetAbi": "10.11.8.0",
-                "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.0.2.0/KometaThemes.zip",
-                "timestamp": "2026-04-24T21:08:23Z",
-                "version": "1.0.2.0"
+                "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.0.2.1/KometaThemes.zip",
+                "timestamp": "2026-04-24T21:42:18Z",
+                "version": "1.0.2.1"
             }
         ]
     }
