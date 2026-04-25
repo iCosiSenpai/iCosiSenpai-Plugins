@@ -9,12 +9,12 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
-        "version": "1.2.1.0",
-        "changelog": "v1.2.1: Versione stabile definitiva. Allineamento con KometaThemes.",
+        "version": "2.0.0.0",
+        "changelog": "v2.0.0: Versione definitiva stabile (Major Release). Estrazione ID MAL/AniList e integrazione profonda.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.2.1.0/AnimeClick.Plugin.zip",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v2.0.0.0/AnimeClick.Plugin.zip",
         "checksum": "4a9a91a9123d5e33eff20da20d4a417d",
-        "timestamp": "2026-04-26T01:00:00Z"
+        "timestamp": "2026-04-26T01:10:00Z"
       }
     ]
   },
@@ -28,12 +28,12 @@
     "owner": "KometaThemes",
     "versions": [
       {
-        "version": "1.2.1.0",
-        "changelog": "v1.2.1: FIX DEFINITIVO RICERCA. Risolto bug nel formato parametri API (forzato include[] manuale) che causava errore UnprocessableEntity.",
+        "version": "2.0.0.0",
+        "changelog": "v2.0.0: Versione definitiva stabile (Major Release). Include tutte le ottimizzazioni di ricerca e fix immagine Dashboard.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.2.1.0/KometaThemes.zip",
-        "checksum": "4442ae6c2508693e766b9f05f3779f8c",
-        "timestamp": "2026-04-26T01:00:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.0.0.0/KometaThemes.zip",
+        "checksum": "af4c5ba91fa7220b31a6f08dab20efc",
+        "timestamp": "2026-04-26T01:10:00Z"
       }
     ]
   }
