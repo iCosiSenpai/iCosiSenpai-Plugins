@@ -9,12 +9,12 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
-        "version": "1.0.2.0",
-        "changelog": "v1.0.2: Allineamento versione con KometaThemes.",
+        "version": "1.1.0.0",
+        "changelog": "v1.1.0: Versione stabile definitiva. Estrazione ID MAL/AniList e integrazione profonda.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.0.2.0/AnimeClick.Plugin.zip",
-        "checksum": "74e3452033f2f7c2df84ca45852b4d59",
-        "timestamp": "2026-04-25T23:30:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.1.0.0/AnimeClick.Plugin.zip",
+        "checksum": "e43e443aedb2819df5691f6965be0f06",
+        "timestamp": "2026-04-25T23:50:00Z"
       }
     ]
   },
@@ -28,12 +28,12 @@
     "owner": "KometaThemes",
     "versions": [
       {
-        "version": "1.0.2.0",
-        "changelog": "v1.0.2: Risolto problema immagine plugin sbiadita/mancante in Dashboard tramite implementazione IHasThumbImage.",
+        "version": "1.1.0.0",
+        "changelog": "v1.1.0: Versione stabile definitiva. Include doppie ricerche, sinonimi e fix immagine Dashboard.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.0.2.0/KometaThemes.zip",
-        "checksum": "47ccd82279e46cef12b2ca645b310ce1",
-        "timestamp": "2026-04-25T23:30:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.1.0.0/KometaThemes.zip",
+        "checksum": "e3525e0515036c776abe20162afeaea9",
+        "timestamp": "2026-04-25T23:50:00Z"
       }
     ]
   }
