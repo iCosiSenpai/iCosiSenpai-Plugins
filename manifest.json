@@ -9,12 +9,12 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
-        "version": "1.0.0.0",
-        "changelog": "v1.0.0: Versione stabile. Estrazione automatica ID MyAnimeList, AniList e AniDB per integrazione perfetta con KometaThemes.",
+        "version": "1.0.1.0",
+        "changelog": "v1.0.1: Allineamento versione con KometaThemes.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.0.0.0/AnimeClick.Plugin.zip",
-        "checksum": "dab9a7d614bf9d1993744295a8cb529e",
-        "timestamp": "2026-04-25T22:00:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.0.1.0/AnimeClick.Plugin.zip",
+        "checksum": "62bdae283d0c5a65ef797f1e40356ece",
+        "timestamp": "2026-04-25T23:00:00Z"
       }
     ]
   },
@@ -28,12 +28,12 @@
     "owner": "KometaThemes",
     "versions": [
       {
-        "version": "1.0.0.0",
-        "changelog": "v1.0.0: Versione definitiva. Supporto sinonimi API; threshold 0.75; ricerca doppia (Titolo + OriginalTitle) per massima compatibilità con AnimeClick.",
+        "version": "1.0.1.0",
+        "changelog": "v1.0.1: FIX CRITICO. Corretto bug nella chiamata API di ricerca (il parametro include doveva essere un array); ora la ricerca per titolo e sinonimi funziona correttamente.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.0.0.0/KometaThemes.zip",
-        "checksum": "994d280cce543acc9ffff6424d311c16",
-        "timestamp": "2026-04-25T22:00:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.0.1.0/KometaThemes.zip",
+        "checksum": "99cef9575233914aaaf236ff38392f82",
+        "timestamp": "2026-04-25T23:00:00Z"
       }
     ]
   }
