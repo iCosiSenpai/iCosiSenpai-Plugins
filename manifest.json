@@ -13,8 +13,8 @@
         "changelog": "v0.1.2: Fix metadati multi-stagione. Parsing S{N} Ep.{M} per stagioni sulla stessa pagina. Risoluzione stagioni su pagine separate via relazioni AnimeClick. Nuovo SeasonProvider. Filtro spin-off.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.1.2.0/AnimeClick.Plugin.zip",
-        "checksum": "E48C1ACB37E7C4BF4DDF4A912222790A",
-        "timestamp": "2026-04-26T16:45:00Z"
+        "checksum": "FC09460E9A5380D411F47C988083D090",
+        "timestamp": "2026-04-26T16:52:00Z"
       },
       {
         "version": "0.1.1.0",
