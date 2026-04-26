@@ -28,6 +28,14 @@
     "owner": "KometaThemes",
     "versions": [
       {
+        "version": "0.3.0.0",
+        "changelog": "v0.3.0: Slug-based fallback lookup, word-overlap scoring, contains substring bonus, romaji synonyms, K fix. Risolve 7 titoli precedentemente non matchati.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.3.0.0/KometaThemes.zip",
+        "checksum": "99983DE24E59593692E99454508D6052",
+        "timestamp": "2026-04-26T11:22:51Z"
+      },
+      {
         "version": "0.2.1.0",
         "changelog": "v0.2.1: Riduzione negativi title match. Estrazione anno da filename, prioritizzazione OriginalTitle giapponese, fallback titolo semplificato, log near-miss a livello Information, e UI per synonym mappings configurabili.",
         "targetAbi": "10.11.8.0",
