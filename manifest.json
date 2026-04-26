@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.1.2.0",
+        "changelog": "v0.1.2: Fix metadati multi-stagione. Parsing S{N} Ep.{M} per stagioni sulla stessa pagina. Risoluzione stagioni su pagine separate via relazioni AnimeClick. Nuovo SeasonProvider. Filtro spin-off.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.1.2.0/AnimeClick.Plugin.zip",
+        "checksum": "15B7FFCD72ADCD2326C5D35082D95509",
+        "timestamp": "2026-04-26T16:34:00Z"
+      },
+      {
         "version": "0.1.1.0",
         "changelog": "v0.1.1: Allineamento versione con KometaThemes.",
         "targetAbi": "10.11.8.0",
@@ -28,12 +36,12 @@
     "owner": "KometaThemes",
     "versions": [
       {
-        "version": "0.1.1.0",
-        "changelog": "v0.1.1: FIX MANUALE URI. Riscritto completamente il generatore di URL per aggirare i problemi di normalizzazione dell'array include[].",
+        "version": "0.1.2.0",
+        "changelog": "v0.1.2: Risolto errore 422 \"The include must be an array\" sulle search per titolo verso animethemes.moe. L'endpoint /search/ non supporta include in nessun formato, quindi la search ora avviene senza include e i dati completi (themes + synonyms) vengono recuperati con una chiamata successiva via /anime/ by-ID.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.1.1.0/KometaThemes.zip",
-        "checksum": "F4A8B2699905E7F57E435B14BA36A68D",
-        "timestamp": "2026-04-26T04:15:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.1.2.0/KometaThemes.zip",
+        "checksum": "B5F80696B8C3C8B626203E3BE3844A32",
+        "timestamp": "2026-04-25T22:36:26Z"
       }
     ]
   }
