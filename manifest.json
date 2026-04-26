@@ -36,20 +36,12 @@
     "overview": "One-click anime OP/ED download via frontend injector + automatic sync from animethemes.moe.",
     "versions": [
       {
-        "version": "1.1.0.0",
-        "changelog": "v1.1.0: One-click OP/ED via frontend injector + immediate sync endpoint + progress bar fix + removed manual synonym UI. Requires JavaScript Injector.",
+        "version": "1.1.2.0",
+        "changelog": "v1.1.2: Fixed mapping save error, search scope bug, injector loads from GitHub raw.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.1.0.0/KometaThemes.zip",
-        "checksum": "FFFE1139014DFA82862D050939738365",
-        "timestamp": "2026-04-26T15:35:00Z"
-      },
-      {
-        "version": "0.1.2.0",
-        "changelog": "v0.1.2: Risolto errore 422 \"The include must be an array\" sulle search per titolo verso animethemes.moe. L'endpoint /search/ non supporta include in nessun formato, quindi la search ora avviene senza include e i dati completi (themes + synonyms) vengono recuperati con una chiamata successiva via /anime/ by-ID.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v0.1.2.0/KometaThemes.zip",
-        "checksum": "B5F80696B8C3C8B626203E3BE3844A32",
-        "timestamp": "2026-04-25T22:36:26Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.1.2.0/KometaThemes.zip",
+        "checksum": "0B536DE0B71548660757B20317033D3E",
+        "timestamp": "2026-04-26T17:40:00Z"
       }
     ]
   }
