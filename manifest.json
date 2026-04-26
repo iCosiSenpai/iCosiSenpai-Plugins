@@ -17,24 +17,5 @@
         "timestamp": "2026-04-26T04:15:00Z"
       }
     ]
-  },
-  {
-    "category": "Metadata",
-    "description": "KometaThemes automatically downloads anime theme songs (OPs and EDs) from animethemes.moe. Features multi-provider resolution, intelligent title matching, parallel downloads, persistent cache, preview mode, synonym mappings, manual identification, and a bilingual Italian/English configuration UI.",
-    "guid": "48c98707-45d1-43ac-94b8-f74d875ad29c",
-    "name": "KometaThemes",
-    "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/KometaTheme/main/assets/banner-readme-plugin.png",
-    "overview": "Automatically downloads anime theme songs (OPs & EDs) from animethemes.moe with multi-provider resolution and intelligent title matching.",
-    "owner": "KometaThemes",
-    "versions": [
-      {
-        "version": "1.1.0.0",
-        "changelog": "v1.1.0: One-click OP/ED via frontend injector. Immediate sync endpoint. Fixed progress bar. Requires JavaScript Injector.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v1.1.0.0/KometaThemes.zip",
-        "checksum": "B94F23EA49C18D9BE74143101E94C22E",
-        "timestamp": "2026-04-26T15:35:00Z"
-      }
-    ]
   }
 ]
