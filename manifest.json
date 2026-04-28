@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.2.0.0",
+        "changelog": "v2.2.0: Hardcoded Anime-only (no lib regex). Live sync progress bar. DegreeOfParallelism slider. Item page in menu. Compiled regex. GUID normalize. Item button JS endpoint.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.2.0.0/KometaThemes.zip",
+        "checksum": "72C02DD7BF44C4D8695176E2F971F8B8",
+        "timestamp": "2026-04-28T17:00:00Z"
+      },
+      {
         "version": "2.1.0.0",
         "changelog": "v2.1.0: Anime-only libraries. Fixes: DownloadTracker race, ffmpeg orphans, ForceSync restore, SemaphoreSlim leak, timer swallows, regex crash, API batch pagination, itemPage delete. New: SyncStatusTracker live progress, SeasonDetectionMode wired, MaxThemesPerSeason enforced, AniListClient registered, CDN resilience.",
         "targetAbi": "10.11.8.0",
