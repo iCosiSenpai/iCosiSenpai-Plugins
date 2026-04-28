@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.3.2.0",
+        "changelog": "v2.3.2: Fix search undefined. Info card with item details. Clean title pre-fill. Year filter. Loading spinner. Alt search buttons. Synopsis display. Better errors.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.3.2.0/KometaThemes.zip",
+        "checksum": "70444A9CEC395195E943A927A40E6414",
+        "timestamp": "2026-04-28T21:30:00Z"
+      },
+      {
         "version": "2.3.1.0",
         "changelog": "v2.3.1: Fix search 422 (remove include from search). Fix anime by ID endpoint (/anime/?filter[id]=xxx).",
         "targetAbi": "10.11.8.0",
@@ -53,7 +61,7 @@
       },
       {
         "version": "2.3.0.0",
-        "changelog": "v2.3.0: Theme Finder — manual OP/ED search & download. Music note button on detail pages. Select audio/video per theme. Select All / Download Selected. Already-downloaded detection.",
+        "changelog": "v2.3.0: Theme Finder \u2014 manual OP/ED search & download. Music note button on detail pages. Select audio/video per theme. Select All / Download Selected. Already-downloaded detection.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.3.0.0/KometaThemes.zip",
         "checksum": "D9771B94F7320341070BF108C9F9D90B",
