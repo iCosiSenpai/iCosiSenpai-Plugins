@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.0.2.0",
+        "changelog": "v2.0.2: Fix title search crash (clean codec tags, handle 422). Force Sync button uses task GUID (fixes 404). IsSatisfied uses MovieSettings. SkippedItems filtered. AllPerSeason removed from movie selects.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.0.2.0/KometaThemes.zip",
+        "checksum": "77A5626FE9F17CB9F6B8BF56EC6B1EDB",
+        "timestamp": "2026-04-28T11:22:00Z"
+      },
+      {
         "version": "2.0.1.0",
         "changelog": "v2.0.1: Fix Force Sync 404 on Jellyfin 10.11.x (use task GUID lookup). IsSatisfied uses MovieSettings. SkippedItems filtered. AllPerSeason removed from movie selects. ForceSync button prominent + truly forces.",
         "targetAbi": "10.11.8.0",
