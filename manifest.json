@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.0.3.0",
+        "changelog": "v2.0.3: Fix ArgumentNullException on virtual items (null ContainingFolderPath). Fix title search crash (clean codec tags, handle 422). Force Sync button uses task GUID. IsSatisfied uses MovieSettings.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.0.3.0/KometaThemes.zip",
+        "checksum": "92CEB8AACA654B9C1DD2B183FF3721E8",
+        "timestamp": "2026-04-28T15:25:00Z"
+      },
+      {
         "version": "2.0.2.0",
         "changelog": "v2.0.2: Fix title search crash (clean codec tags, handle 422). Force Sync button uses task GUID (fixes 404). IsSatisfied uses MovieSettings. SkippedItems filtered. AllPerSeason removed from movie selects.",
         "targetAbi": "10.11.8.0",
