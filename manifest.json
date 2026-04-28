@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.3.1.0",
+        "changelog": "v2.3.1: Fix search 422 (remove include from search). Fix anime by ID endpoint (/anime/?filter[id]=xxx).",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.3.1.0/KometaThemes.zip",
+        "checksum": "EF48F468DABD27837110556E91CCD7F9",
+        "timestamp": "2026-04-28T21:15:00Z"
+      },
+      {
         "version": "2.3.0.0",
         "changelog": "v2.3.0: Theme Finder — manual OP/ED search & download. Music note button on detail pages. Select audio/video per theme. Select All / Download Selected. Already-downloaded detection.",
         "targetAbi": "10.11.8.0",
