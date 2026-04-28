@@ -32,10 +32,17 @@
     "name": "KometaThemes",
     "guid": "48c98707-45d1-43ac-94b8-f74d875ad29c",
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/KometaTheme/main/assets/banner-readme-plugin.png",
-    "description": "KometaThemes automatically downloads anime theme songs (OPs and EDs) from animethemes.moe. Features multi-provider resolution, intelligent title matching, parallel downloads, preview mode, one-click OP/ED via JavaScript Injector, and a bilingual Italian/English UI.",
-    "overview": "One-click anime OP/ED download via frontend injector + automatic sync from animethemes.moe.",
-    "versions": [
-      {
+        "description": "KometaThemes automatically downloads anime theme songs (OPs and EDs) from animethemes.moe. Features multi-season detection, AllPerSeason fetch, multi-provider resolution, parallel downloads, global playlist generation, REST API, and bilingual Italian/English UI.",
+        "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
+        "versions": [
+            {
+                "version": "2.0.0.0",
+                "changelog": "v2.0.0 definitive: Multi-season support with episode range mapping. AllPerSeason fetch type. Parser-based season detection (EN/IT/JP regex). Parallel downloads. Improved naming (OP1 - ThemeName.mp3). Per-item REST API + UI. Global M3U playlist. Video enabled by default. Live download log.",
+                "targetAbi": "10.11.8.0",
+                "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.0.0.0/KometaThemes.zip",
+                "checksum": "F2B7CC00EF9BD7842DCC0E3551FD8519",
+                "timestamp": "2026-04-28T00:00:00Z"
+            },
         "version": "1.1.2.0",
         "changelog": "v1.1.2: Fixed mapping save error, search scope bug, injector loads from GitHub raw.",
         "targetAbi": "10.11.8.0",
