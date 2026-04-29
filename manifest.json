@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.5.0.0",
+        "changelog": "v2.5.0: MutationObserver injector (stable button). Info card with synopsis. Clean title + year filter. Loading spinner. Alt search. Error messages.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.0.0/KometaThemes.zip",
+        "checksum": "B26D61165B7CF174711AEE9684D7B9D5",
+        "timestamp": "2026-04-28T22:00:00Z"
+      },
+      {
         "version": "2.3.2.0",
         "changelog": "v2.3.2: Fix search undefined. Info card with item details. Clean title pre-fill. Year filter. Loading spinner. Alt search buttons. Synopsis display. Better errors.",
         "targetAbi": "10.11.8.0",
