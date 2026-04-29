@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.5.2.0",
+        "changelog": "v2.5.2: Theme Finder refresh with IT/EN labels, clearer item/result/selected-anime states, synopsis and improved OP/ED rows. Hardened manual downloads with item/media/URL validation, HTTPS animethemes.moe allow-listing, sanitized filenames, path traversal protection, deduped theme rows and consistent JSON errors.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.2.0/KometaThemes.zip",
+        "checksum": "1D48D8C1531FA2FC8EEEEBA9EC3EECED",
+        "timestamp": "2026-04-29T15:24:13Z"
+      },
+      {
         "version": "2.5.1.0",
         "changelog": "v2.5.1: injector v4 \u2014 button recreated on every hash change. Fixes disappearing button and stale item IDs between detail pages.",
         "targetAbi": "10.11.8.0",
