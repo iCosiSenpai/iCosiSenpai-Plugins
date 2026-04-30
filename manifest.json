@@ -48,8 +48,8 @@
         "changelog": "v2.5.6.2: Unmissable selection state with filled accent color + checkmark + glow shadow, toast notifications for all bulk actions (count feedback), new Download All button, and download confirmation toast.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.6.2/KometaThemes.zip",
-        "checksum": "51E4297EB8C6E53CA5178B931EB7A2E4",
-        "timestamp": "2026-04-30T18:40:00Z"
+        "checksum": "6DB9E49ADDAC18D02F13D15666635880",
+        "timestamp": "2026-05-01T01:25:00Z"
       },
       {
         "version": "2.5.6.1",
