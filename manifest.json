@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
       "versions": [
       {
+        "version": "2.5.7.0",
+        "changelog": "v2.5.7: Fix Theme Finder manual selection state with stable JS selection keys, visible selected/partial states for individual and bulk OP/ED buttons, persistent selected counter, compact reordered details/download layout, and stronger backend payload binding/logging for manual downloads. Breaking changes: none.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.7.0/KometaThemes.zip",
+        "checksum": "6B661A7A7965230F220BE1D8EAA2E8AF",
+        "timestamp": "2026-04-30T23:52:57Z"
+      },
+      {
         "version": "2.5.6.3",
         "changelog": "v2.5.6.3: Critical fix — broken bulk OP/ED selection in season-grouped view due to JSON round-trip object identity. Added themeIndexMap for correct theme lookup.",
         "targetAbi": "10.11.8.0",
