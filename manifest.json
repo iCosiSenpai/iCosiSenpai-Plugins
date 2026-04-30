@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
       "versions": [
       {
+        "version": "2.5.6.1",
+        "changelog": "v2.5.6.1: Design polish with hover/active states, focus-visible rings, smooth transitions, theme-tinted shadows, refined typography (letter-spacing, text-wrap), and light-theme accent tweak.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.6.1/KometaThemes.zip",
+        "checksum": "83BA0969CD2563F5C9B790F77550C2AF",
+        "timestamp": "2026-04-30T18:20:00Z"
+      },
+      {
         "version": "2.5.6.0",
         "changelog": "v2.5.6: Season-grouped theme picker with collapsible accordion UI, per-season OP/ED bulk download buttons, global multi-season 'All OP/ED MP3/WebM' action bar, parallel manual downloads (2x), and download progress counter.",
         "targetAbi": "10.11.8.0",
