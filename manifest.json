@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.5.4.0",
+        "changelog": "v2.5.4: Theme Finder search quality fix. Adds item-aware trusted title/slug matching, confidence labels, strict filtering of broad AnimeThemes search results, broad-results manual rescue, and diagnostic candidate logging.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.4.0/KometaThemes.zip",
+        "checksum": "9CD201A2C12396D305E2620DC3D8A423",
+        "timestamp": "2026-04-30T08:17:23Z"
+      },
+      {
         "version": "2.5.3.0",
         "changelog": "v2.5.3: Redesigned Theme Finder as a contextual Jellyfin item screen with metadata, visible DIR/FILE paths, copy controls, automatic search, clearer result/detail panels, and plugin-wide UI language setting (English default, Italian secondary).",
         "targetAbi": "10.11.8.0",
