@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.5.5.0",
+        "changelog": "v2.5.5: Fix Wistoria Theme Finder detail loading by using the AnimeThemes slug show endpoint, adds poster-card search results and richer OP/ED media rows, preserves OP1/ED1 labels when AnimeThemes sequence is null, and retries automatic non-Latin original-title searches with the Jellyfin display name. Breaking changes: none.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.5.0/KometaThemes.zip",
+        "checksum": "206D0FF150BDCE85FC65E4E6007C4FDA",
+        "timestamp": "2026-04-30T08:48:33Z"
+      },
+      {
         "version": "2.5.4.0",
         "changelog": "v2.5.4: Theme Finder search quality fix. Adds item-aware trusted title/slug matching, confidence labels, strict filtering of broad AnimeThemes search results, broad-results manual rescue, and diagnostic candidate logging.",
         "targetAbi": "10.11.8.0",
