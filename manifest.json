@@ -42,7 +42,15 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/KometaTheme/main/assets/banner-readme-plugin.png",
     "description": "KometaThemes automatically downloads anime theme songs (OPs and EDs) from animethemes.moe. Features multi-season detection, AllPerSeason fetch, multi-provider resolution, parallel downloads, global playlist generation, REST API, and bilingual Italian/English UI.",
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
-    "versions": [
+      "versions": [
+      {
+        "version": "2.5.6.0",
+        "changelog": "v2.5.6: Season-grouped theme picker with collapsible accordion UI, per-season OP/ED bulk download buttons, global multi-season 'All OP/ED MP3/WebM' action bar, parallel manual downloads (2x), and download progress counter.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.6.0/KometaThemes.zip",
+        "checksum": "4B784EC5FC2B67CBF41C5869B6880BCB",
+        "timestamp": "2026-04-30T18:00:00Z"
+      },
       {
         "version": "2.5.5.0",
         "changelog": "v2.5.5: Fix Theme Finder detail loading by using the AnimeThemes slug show endpoint when available, resolving cases where the ID-filtered endpoint returns empty theme lists. Adds poster-card search results and richer OP/ED media rows, preserves OP1/ED1 labels when AnimeThemes sequence is null, and retries automatic non-Latin original-title searches with the Jellyfin display name. Breaking changes: none.",
