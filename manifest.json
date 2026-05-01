@@ -42,7 +42,15 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/KometaTheme/main/assets/banner-readme-plugin.png",
     "description": "KometaThemes automatically downloads anime theme songs (OPs and EDs) from animethemes.moe. Features multi-season detection, AllPerSeason fetch, multi-provider resolution, parallel downloads, global playlist generation, REST API, and bilingual Italian/English UI.",
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
-      "versions": [
+    "versions": [
+      {
+        "version": "2.5.10.0",
+        "changelog": "v2.5.10: Hotfix for Theme Finder. Detail-page button now survives Jellyfin SPA back/forward and item navigation. MP3/WebM selected and downloaded states are clearer. Download selected now binds selected theme payloads correctly instead of returning No themes specified. Queue logs include MP3/WebM labels.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.10.0/KometaThemes.zip",
+        "checksum": "CF25FC9BD11A5D672049835316525234",
+        "timestamp": "2026-05-01T11:56:30Z"
+      },
       {
         "version": "2.5.9.1",
         "changelog": "v2.5.9.1: Fix Theme Finder media selection not entering the download payload by using stable index/type selection keys and storing queued URL metadata at click time. Makes unselected MP3/WebM and bulk buttons visibly subdued, adds selected counts to the download button, makes All MP3/WebM true toggles, disables unavailable bulk actions, and logs queued items before manual download starts. Breaking changes: none.",
