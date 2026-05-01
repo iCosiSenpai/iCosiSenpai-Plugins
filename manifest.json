@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
       "versions": [
       {
+        "version": "2.5.9.0",
+        "changelog": "v2.5.9: Force Theme Finder refresh in Jellyfin Web by registering a versioned page name, navigating with cache-busting query parameters, and serving the item-button script with no-cache headers. Keeps the 2.5.8 full UI rewrite and fixes stale UI/button behavior after reinstall.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.9.0/KometaThemes.zip",
+        "checksum": "FC36ADF9A91FC7970D9BAB7881038F12",
+        "timestamp": "2026-05-01T00:27:54Z"
+      },
+      {
         "version": "2.5.8.0",
         "changelog": "v2.5.8: Full Theme Finder UI rewrite with Jellyfin-native three-column desktop layout, single-column mobile layout, compact search results, one unified action bar, a single OP/ED list without season accordions, segmented MP3/WebM toggles, disabled downloaded media controls, and collapsible download log. Removes duplicated global/per-season/download-all buttons. Breaking changes: none.",
         "targetAbi": "10.11.8.0",
