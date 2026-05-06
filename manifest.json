@@ -44,6 +44,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.5.12.1",
+        "changelog": "v2.5.12.1: Hotfix for the Jellyfin main-menu Item Themes page. Adds the global quick actions (Scarica tutti OP, Scarica tutti ED, Scarica OP/ED, Scarica OP/ED + video) and live sync progress to KometaThemesItem, bumps the cache-busting Theme Finder page name/version, and keeps the 2.5.12 audible-video replacement behavior. Breaking changes: none.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.12.1/KometaThemes.zip",
+        "checksum": "04A5B8E3422FFAD526C5ADCF6E43CEA6",
+        "timestamp": "2026-05-06T11:43:15Z"
+      },
+      {
         "version": "2.5.12.0",
         "changelog": "v2.5.12: Fix Theme Finder button injection so it only appears on visible Series and Movie detail pages, never Season/Episode pages. Video downloads now default to audible 50% volume, migrate old muted defaults once, write WebM files as __50.webm, and replace legacy muted __0.webm files. Adds elevated preset sync actions for all OP audio, all ED audio, all OP/ED audio, and all OP/ED audio plus video. Breaking changes: none.",
         "targetAbi": "10.11.8.0",
