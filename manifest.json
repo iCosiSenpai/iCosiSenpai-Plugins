@@ -52,6 +52,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.5.13.0",
+        "changelog": "v2.5.13.0: Real-time theme sync on new library items via LibrarySyncHandler that subscribes to ILibraryManager.ItemAdded; 30s debounce batching for bulk imports. New MissingThemeFallbackMode config option (None/AllOPs/AllEDs/AllVideos/AllOPsEDsVideos) controls what to download when an item has zero existing themes. Fallback mode added to config page Themes tab. Italian/English translations included. Breaking changes: none.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.13.0/KometaThemes.zip",
+        "checksum": "38e8e7e5bbe55aecd907a97e85079dc1",
+        "timestamp": "2026-06-07T16:45:00Z"
+      },
+      {
         "version": "2.5.12.3",
         "changelog": "v2.5.12.3: Hotfix for global OP/ED + video replacement on items that only resolve through title fallback. Title fallback now retries trusted Jellyfin titles including OriginalTitle, TvdbSlug, and AnimeClick slug, hydrates the selected AnimeThemes result before download, and uses a new cache key to bypass stale negative title-cache entries. This allows legacy muted __0.webm files to be replaced with audible __50.webm files for romanized/English-title mismatches. Breaking changes: none.",
         "targetAbi": "10.11.8.0",
