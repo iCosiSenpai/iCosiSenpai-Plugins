@@ -52,6 +52,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.7.0.1",
+        "changelog": "v2.7.0.1: Critical hotfix — circular DI dependency between LibrarySyncHandler and ItemRemovedHandler caused plugin to fail to load with Malfunctioned on Jellyfin 10.11.x. Removed unused LibrarySyncHandler field from ItemRemovedHandler. Plugin now loads cleanly. Bumped version badges in all HTML pages.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.7.0.1/KometaThemes.zip",
+        "checksum": "4F4396C36AD58DA9EF347FA4CB0B22CA",
+        "timestamp": "2026-06-09T01:25:00Z"
+      },
+      {
         "version": "2.7.0.0",
         "changelog": "v2.7.0.0: Health endpoint exposing version, cache stats, sync state and download metrics. ItemRemoved handler with opt-in cleanup toggle (theme-music/, backdrops/, _kometa_themes.json). Theme Finder now respects user-configured audio/video volume. New Automation tab with AutoSyncOnItemAdded, CleanupThemesOnItemRemoved, NotifyOnSyncComplete. M3U playlist export endpoint. Per-item preview/dry-run endpoint. Last sync summary surfaced in config UI. Reset to Defaults button. Live input validation. DownloadMetrics counters. xUnit test project with 18 tests. GitHub Actions CI workflow. Fixes: DownloadTracker now wired in (was dead code), orphan pruning only touches files we wrote, RateLimitingHandler hot-reloads on config change, LibrarySyncHandler has SemaphoreSlim(2) to prevent bulk-import storm, LibrarySyncHandler respects AutoSyncOnItemAdded toggle, SanitizeThemeName handles Windows reserved names, all File.Delete calls wrapped in try/catch, temp file cleanup in finally. Breaking changes: none.",
         "targetAbi": "10.11.8.0",
