@@ -52,6 +52,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.7.0.2",
+        "changelog": "v2.7.0.2: Fix themes not playing on Jellyfin 10.11.x — RefreshMetadata now uses MetadataRefreshMode.FullRefresh to force ThemeMediaResolver to assign theme songs to the correct Series parent instead of CollectionFolder. IsSatisfied now falls back to filesystem check when GetThemeSongs() is empty. Root cause: Jellyfin 10.11.11's ThemeMediaResolver links theme items to library root during default refresh. A Force Sync is needed to re-trigger metadata refresh for existing items.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.7.0.2/KometaThemes.zip",
+        "checksum": "3A33AD901B2124BE34098356DDE32293",
+        "timestamp": "2026-06-11T22:20:00Z"
+      },
+      {
         "version": "2.7.0.1",
         "changelog": "v2.7.0.1: Critical hotfix — circular DI dependency between LibrarySyncHandler and ItemRemovedHandler caused plugin to fail to load with Malfunctioned on Jellyfin 10.11.x. Removed unused LibrarySyncHandler field from ItemRemovedHandler. Plugin now loads cleanly. Bumped version badges in all HTML pages.",
         "targetAbi": "10.11.8.0",
