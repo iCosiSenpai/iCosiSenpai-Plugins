@@ -52,6 +52,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.7.0.3",
+        "changelog": "v2.7.0.3: ForceSync now triggers FullRefresh even when no themes change. In 2.7.0.2, RefreshMetadata only ran on new downloads; ForceSync with existing files skipped the download entirely, leaving themes linked to CollectionFolder. A Force Sync is required to reassign existing theme items to Series parents.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.7.0.3/KometaThemes.zip",
+        "checksum": "BD4ADC83213060AA669DA446EE5263C9",
+        "timestamp": "2026-06-11T22:30:00Z"
+      },
+      {
         "version": "2.7.0.2",
         "changelog": "v2.7.0.2: Fix themes not playing on Jellyfin 10.11.x — RefreshMetadata now uses MetadataRefreshMode.FullRefresh to force ThemeMediaResolver to assign theme songs to the correct Series parent instead of CollectionFolder. IsSatisfied now falls back to filesystem check when GetThemeSongs() is empty. Root cause: Jellyfin 10.11.11's ThemeMediaResolver links theme items to library root during default refresh. A Force Sync is needed to re-trigger metadata refresh for existing items.",
         "targetAbi": "10.11.8.0",
