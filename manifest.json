@@ -52,6 +52,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.7.0.4",
+        "changelog": "v2.7.0.4: Workaround for Jellyfin 10.11.11 ThemeSong CollectionFolder bug. After downloading, copies best theme to theme.mp3 in series root — the oldest and most reliable Jellyfin theme convention. theme-music/ and backdrops/ files are kept for future compatibility. A Force Sync is needed after upgrade.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.7.0.4/KometaThemes.zip",
+        "checksum": "E4AA1A99415A217E9596E34808700076",
+        "timestamp": "2026-06-11T22:40:00Z"
+      },
+      {
         "version": "2.7.0.3",
         "changelog": "v2.7.0.3: ForceSync now triggers FullRefresh even when no themes change. In 2.7.0.2, RefreshMetadata only ran on new downloads; ForceSync with existing files skipped the download entirely, leaving themes linked to CollectionFolder. A Force Sync is required to reassign existing theme items to Series parents.",
         "targetAbi": "10.11.8.0",
