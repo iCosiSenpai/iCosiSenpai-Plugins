@@ -52,6 +52,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "2.8.0.0",
+        "changelog": "v2.8.0.0: Complete frontend redesign (new design system, guided Theme Finder with audio/video preview, status dashboard, item page with one-click theme link repair). Fix for themes not playing on Jellyfin 10.11.x via ThemeLinkRepairService. Modern MediaBrowser auth (10.12-ready). Per-file theme delete fixed. Hard refresh the dashboard after updating (Ctrl+Shift+R).",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v2.8.0.0/KometaThemes.zip",
+        "checksum": "79FFB8A4FECDA85BF6A1DBDF22EAC173",
+        "timestamp": "2026-06-12T08:04:51Z"
+      },
+      {
         "version": "2.7.0.4",
         "changelog": "v2.7.0.4: Workaround for Jellyfin 10.11.11 ThemeSong CollectionFolder bug. After downloading, copies best theme to theme.mp3 in series root — the oldest and most reliable Jellyfin theme convention. theme-music/ and backdrops/ files are kept for future compatibility. A Force Sync is needed after upgrade.",
         "targetAbi": "10.11.8.0",
@@ -245,7 +253,7 @@
       },
       {
         "version": "2.5.1.0",
-        "changelog": "v2.5.1: injector v4 \u2014 button recreated on every hash change. Fixes disappearing button and stale item IDs between detail pages.",
+        "changelog": "v2.5.1: injector v4 — button recreated on every hash change. Fixes disappearing button and stale item IDs between detail pages.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.5.1.0/KometaThemes.zip",
         "checksum": "2F1AEC3E162CC55F8F8E55D98655E7A4",
@@ -277,7 +285,7 @@
       },
       {
         "version": "2.3.0.0",
-        "changelog": "v2.3.0: Theme Finder \u2014 manual OP/ED search & download. Music note button on detail pages. Select audio/video per theme. Select All / Download Selected. Already-downloaded detection.",
+        "changelog": "v2.3.0: Theme Finder — manual OP/ED search & download. Music note button on detail pages. Select audio/video per theme. Select All / Download Selected. Already-downloaded detection.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/KometaTheme/releases/download/v2.3.0.0/KometaThemes.zip",
         "checksum": "D9771B94F7320341070BF108C9F9D90B",
