@@ -9,12 +9,12 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
-        "version": "0.2.4.0",
-        "changelog": "v0.2.4: AnimeClick ora gira DOPO AniList/TheMovieDb/OMDb (Order 0->100) così i campi che AnimeClick non copre (Studios, OfficialRating, generi vuoti) vengono popolati PRIMA dai provider a monte. Mapping difensivo in MovieProvider/SeriesProvider: Genres e Studios si applicano solo se la sorgente AnimeClick ha davvero qualcosa (Count>0) — prima il plugin sovrascriveva sempre con array vuoto, perdendo i dati di AniList/TMDB. Log diagnostico 'leaving fields for downstream providers' per identificare a colpo d'occhio quali field non sono stati popolati. README con la catena corretta (AniList > TMDB > OMDb > AnimeClick). Test su Hanasaku Iroha Home Sweet Home: Studios era vuoto, adesso viene popolato da AniList (P.A.Works).",
+        "version": "0.2.5.0",
+        "changelog": "v0.2.5: Force-download immagini da Fanart/AniList/TMDB/OMDb. Jellyfin 10.11.11 NON espone ReplaceAllImages su MetadataRefreshOptions, quindi anche con ReplaceAllMetadata=true il RefreshMetadata built-in NON riscarica le immagini remote in modo affidabile. v0.2.5.0 chiama direttamente IProviderManager.GetAvailableRemoteImages + IProviderManager.SaveImage dentro IdentifyAndRefresh: per ogni item interroga Primary (1), Backdrop (3), Logo (1), Art (1), Thumb (1), ordina per priorità provider (Fanart > AniList > TMDB > OMDb > Embedded) e scarica il migliore. Nuovo campo DownloadedImages nella response con Type:Provider:Url per ogni immagine salvata. Log diagnostico per ogni immagine scaricata. ReplaceAllImages checkbox nella configPage è ora legacy: anche deselezionato, il controller cancella e riscarica. Test su Hanasaku Iroha Home Sweet Home (cb31a96c): il pulsante 'Refresh' standard di Jellyfin triggera solo un refresh single-provider in 10.11.x (AniList e TMDB non vengono chiamati), quindi Studios e OfficialRating restano vuoti. Usare il pulsante 'Identify & Refresh' del plugin che forza il download completo.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.4.0/AnimeClick.Plugin.v0.2.4.0.zip",
-        "checksum": "BBB67B993B90B850B551540FE8847F9B",
-        "timestamp": "2026-06-13T22:55:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.5.0/AnimeClick.Plugin.v0.2.5.0.zip",
+        "checksum": "BE7F8C3DC76623994C63622BC1E90595",
+        "timestamp": "2026-06-13T23:10:00Z"
       }
     ]
   },
