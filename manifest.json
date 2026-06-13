@@ -52,12 +52,12 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
-        "version": "1.0.0.1",
-        "changelog": "Fix: the music-note (Theme Finder) button is now injected correctly when other web-mod plugins (Jellyfin Enhanced, KefinTweaks, JavaScript Injector, …) are installed — the File Transformation registration now joins the shared index.html pipeline instead of a separate one that never ran.",
+        "version": "1.0.0.2",
+        "changelog": "Fix: the provider priority list no longer accumulates duplicate entries on every save/restart (it is deduplicated and repaired automatically on load). The KometaThemes entry in the dashboard Plugins sidebar now shows the brand planet icon instead of the generic folder, with a cleaner label.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.0.1/KometaThemes.zip",
-        "checksum": "80A13E29F788D551FCACDE552D7528BC",
-        "timestamp": "2026-06-13T12:09:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.0.2/KometaThemes.zip",
+        "checksum": "0C58F8E491B9C8A0EE856492A106E7A7",
+        "timestamp": "2026-06-13T13:38:30Z"
       }
     ]
   }
