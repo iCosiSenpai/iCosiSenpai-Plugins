@@ -60,12 +60,12 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
-        "version": "1.0.0.6",
-        "changelog": "Unresolved tab: each row now has a Search & bind button that opens the Theme Finder for that anime, so you can search and attach themes manually. Clearer settings: the old Library tab is now Excluded (just the blacklist, with plainer wording) and the themes playlist moved into the Themes & Download tab with a short explanation of what Refresh / Export M3U do.",
+        "version": "1.0.0.7",
+        "changelog": "The interface language selector (English / Italiano, in the General tab) now switches the whole dashboard instantly when you pick it, instead of only after saving and reopening the page.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.0.6/KometaThemes.zip",
-        "checksum": "AB17C5A47BA6DBB16657E230B849E5B7",
-        "timestamp": "2026-06-13T22:18:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.0.7/KometaThemes.zip",
+        "checksum": "CBDFAA231EEE3C255008CA1618299141",
+        "timestamp": "2026-06-13T22:40:00Z"
       }
     ]
   }
