@@ -9,8 +9,16 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.2.2.0",
+        "changelog": "v0.2.2: Fix Identify → Save → Refresh su Jellyfin 10.11.x (lo spinner brevissimo di Identify → Save non popola i metadata: l'API /Items/RemoteSearch/Apply salva l'ID ma non triggera un metadata refresh). Aggiunto custom controller POST /Plugins/AnimeClick/IdentifyAndRefresh che salva l'ID e triggera immediatamente un full refresh (ReplaceAllMetadata=true). Aggiunto GET /Plugins/AnimeClick/IdentifyStatus per diagnosi. Pulsanti 'Identify & Refresh' e 'Stato Identify' nella configPage del plugin. Log diagnostico esplicito all'ingresso di MovieProvider/SeriesProvider/EpisodeProvider/SeasonProvider.GetMetadata. README con sezione dedicata al flusso Identify → Save → Refresh e limitazione Jellyfin 10.11.x.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.2.0/AnimeClick.Plugin.v0.2.2.0.zip",
+        "checksum": "CC46F823ECB89C1C259C499514303F6E",
+        "timestamp": "2026-06-13T19:15:00Z"
+      },
+      {
         "version": "0.2.1.0",
-        "changelog": "v0.2.1: Fix titoli Special/OVA/OAD assegnati erroneamente a stagioni regolari. Parser rileva episodi Special dal titolo e forza SeasonNumber=0. EpisodeMatcher blocca fallback absolute per titoli Special su richieste di stagione regolare. EpisodeProvider safety net per ParentIndexNumber > 0. Nuovo regex SpecialTitleRegex per pattern Special/OVA/OAV/OAD/ONA/PV/Recap/Bonus/Extra.",
+        "changelog": "v0.2.1: Fix titoli Special/OVA/OAD assegnati erroneamente a stagioni regolari. Parser rileva episodi Special dal titolo e forza SeasonNumber=0. EpisodeMatcher blocca fallback absolute per titoli Special su richiesta di stagione regolare. EpisodeProvider safety net per ParentIndexNumber > 0. Nuovo regex SpecialTitleRegex per pattern Special/OVA/OAV/OAD/ONA/PV/Recap/Bonus/Extra.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.1.0/AnimeClick.Plugin.v0.2.1.0.zip",
         "checksum": "5A3ABBBFA3ECEF548602B983A0663310",
