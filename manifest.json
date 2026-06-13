@@ -9,12 +9,12 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
-        "version": "0.2.3.0",
-        "changelog": "v0.2.3: Fix Identify & Refresh non riscarica le immagini remote esistenti (poster, backdrop, logo). Aggiunto flag ReplaceAllImages su POST /Plugins/AnimeClick/IdentifyAndRefresh che rimuove le immagini remote preservando folder.jpg/poster.jpg/backdrop.jpg locali e fa riscaricare dagli ImageFetchers (Fanart, AniList, TMDB, OMDb, Embedded Image Extractor, Screen Grabber). Checkbox 'Sostituisci anche le immagini' nella configPage (default deselezionato per non sovrascrivere artwork curato). Nuovo endpoint diagnostico GET /Plugins/AnimeClick/AvailableRemoteImages per preview delle immagini remote di ogni ImageFetcher abilitato. README aggiornata con la nuova opzione.",
+        "version": "0.2.4.0",
+        "changelog": "v0.2.4: AnimeClick ora gira DOPO AniList/TheMovieDb/OMDb (Order 0->100) così i campi che AnimeClick non copre (Studios, OfficialRating, generi vuoti) vengono popolati PRIMA dai provider a monte. Mapping difensivo in MovieProvider/SeriesProvider: Genres e Studios si applicano solo se la sorgente AnimeClick ha davvero qualcosa (Count>0) — prima il plugin sovrascriveva sempre con array vuoto, perdendo i dati di AniList/TMDB. Log diagnostico 'leaving fields for downstream providers' per identificare a colpo d'occhio quali field non sono stati popolati. README con la catena corretta (AniList > TMDB > OMDb > AnimeClick). Test su Hanasaku Iroha Home Sweet Home: Studios era vuoto, adesso viene popolato da AniList (P.A.Works).",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.3.0/AnimeClick.Plugin.v0.2.3.0.zip",
-        "checksum": "9A7F5CC0DCF3ADA65DC760571224A891",
-        "timestamp": "2026-06-13T22:30:00Z"
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.4.0/AnimeClick.Plugin.v0.2.4.0.zip",
+        "checksum": "BBB67B993B90B850B551540FE8847F9B",
+        "timestamp": "2026-06-13T22:55:00Z"
       }
     ]
   },
