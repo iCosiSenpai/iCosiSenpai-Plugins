@@ -15,46 +15,6 @@
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.3.0/AnimeClick.Plugin.v0.2.3.0.zip",
         "checksum": "9A7F5CC0DCF3ADA65DC760571224A891",
         "timestamp": "2026-06-13T22:30:00Z"
-      },
-      {
-        "version": "0.2.2.0",
-        "changelog": "v0.2.2: Fix Identify → Save → Refresh su Jellyfin 10.11.x (lo spinner brevissimo di Identify → Save non popola i metadata: l'API /Items/RemoteSearch/Apply salva l'ID ma non triggera un metadata refresh). Aggiunto custom controller POST /Plugins/AnimeClick/IdentifyAndRefresh che salva l'ID e triggera immediatamente un full refresh (ReplaceAllMetadata=true). Aggiunto GET /Plugins/AnimeClick/IdentifyStatus per diagnosi. Pulsanti 'Identify & Refresh' e 'Stato Identify' nella configPage del plugin. Log diagnostico esplicito all'ingresso di MovieProvider/SeriesProvider/EpisodeProvider/SeasonProvider.GetMetadata. README con sezione dedicata al flusso Identify → Save → Refresh e limitazione Jellyfin 10.11.x.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.2.0/AnimeClick.Plugin.v0.2.2.0.zip",
-        "checksum": "CC46F823ECB89C1C259C499514303F6E",
-        "timestamp": "2026-06-13T19:15:00Z"
-      },
-      {
-        "version": "0.2.1.0",
-        "changelog": "v0.2.1: Fix titoli Special/OVA/OAD assegnati erroneamente a stagioni regolari. Parser rileva episodi Special dal titolo e forza SeasonNumber=0. EpisodeMatcher blocca fallback absolute per titoli Special su richiesta di stagione regolare. EpisodeProvider safety net per ParentIndexNumber > 0. Nuovo regex SpecialTitleRegex per pattern Special/OVA/OAV/OAD/ONA/PV/Recap/Bonus/Extra.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.1.0/AnimeClick.Plugin.v0.2.1.0.zip",
-        "checksum": "5A3ABBBFA3ECEF548602B983A0663310",
-        "timestamp": "2026-06-07T14:05:00Z"
-      },
-      {
-        "version": "0.2.0.0",
-        "changelog": "v0.2.0: Matching episodi universale con normalizzazione AnimeClick per numero assoluto, progressivo stagione e ID episodio. Diagnostica admin per lookup, preview episodi e pulizia cache mirata. Ricerca migliorata con scoring per titolo, anno e tipo. Cache episodi/season-map versionata. OP/ED best-effort con warning per pagine trailer/PV-only.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.0.0/AnimeClick.Plugin.zip",
-        "checksum": "0BE3D4F67D3F76386D1E5A760A23D9F7",
-        "timestamp": "2026-04-28T10:36:34Z"
-      },
-      {
-        "version": "0.1.2.0",
-        "changelog": "v0.1.2: Fix metadati multi-stagione. Parsing S{N} Ep.{M} per stagioni sulla stessa pagina. Risoluzione stagioni su pagine separate via relazioni AnimeClick. Nuovo SeasonProvider. Filtro spin-off.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.1.2.0/AnimeClick.Plugin.zip",
-        "checksum": "FC09460E9A5380D411F47C988083D090",
-        "timestamp": "2026-04-26T16:52:00Z"
-      },
-      {
-        "version": "0.1.1.0",
-        "changelog": "v0.1.1: Allineamento versione con KometaThemes.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.1.1.0/AnimeClick.Plugin.zip",
-        "checksum": "8C79A809FEA186164B98498AED84206A",
-        "timestamp": "2026-04-26T04:15:00Z"
       }
     ]
   },
