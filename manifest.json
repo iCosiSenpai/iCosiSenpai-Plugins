@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.2.11.0",
+        "changelog": "v0.2.11: Nuova dashboard premium glassmorphism con header sticky, tab bar iconata a pillole, tile stato provider, azioni rapide e save dock fisso. Ricerca impostazioni live e descrizioni toggleabili. Backend invariato.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.11.0/AnimeClick.Plugin.v0.2.11.0.zip",
+        "checksum": "80A923EB65E8B1454A8A8CA824479A95",
+        "timestamp": "2026-06-22T21:00:00Z"
+      },
+      {
         "version": "0.2.10.0",
         "changelog": "v0.2.10: Pagina di configurazione rinnovata. Quattro schede in alto (Metadati, Sinossi episodi, Ricerca, Strumenti) con card visive e icone. Rimossa la sezione diagnostica tecnica, sostituita da strumenti piu semplici: Identifica e Aggiorna, e Svuota cache con un clic. I test di connessione TMDB, Ollama e TVDB ora mostrano un badge Connesso o Errore invece del testo tecnico. Risolto il bug dei pulsanti di test che mostravano parentesi vuote.",
         "targetAbi": "10.11.8.0",
