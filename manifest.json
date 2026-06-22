@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.2.9.0",
+        "changelog": "v0.2.9: TheTVDB come fonte preferita di sinossi episodi in italiano. Nuovo servizio AnimeClickTvdbClient: login TVDB v4 (token cached 24h), risoluzione ID serie (/search?type=series, cached), lista episodi tradotta in una sola chiamata paginata (/series/{id}/episodes/default/{lang}, cached per serie+lingua). Quando TVDB ha la sinossi IT la usa direttamente — zero chiamate Ollama, zero compute sul NAS; se TVDB non ha la traduzione, fallback sul flusso esistente TMDB EN + Ollama IT. Nuovi toggle EnableTvdbSynopsis + TvdbApiKey + TvdbLanguage (default ita), opt-in. Pulsanti di test con errore dettagliato: Test TMDB / Test Ollama / Test TVDB nella sezione sinossi della config page validano le credenziali attualmente inserite (non serve salvare) e mostrano status HTTP, corpo della risposta e messaggio eccezione. Nuovi endpoint POST /Plugins/AnimeClick/TestTmdb|TestOllama|TestTvdb su AnimeClickDiagnosticsController + metodi TestConnectionAsync sui tre service (no silent-catch, DTO dettagliati). 12/12 test verdi (nuovi test TVDB URL building + parsing). README: tutorial sinossi riscritto (TVDB fonte preferita + fallback, sezione pulsanti di test, caveat TVDB).",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.9.0/AnimeClick.Plugin.v0.2.9.0.zip",
+        "checksum": "9F9D3E1E676BD25AFC4B6CF2471CCD37",
+        "timestamp": "2026-06-22T17:45:00Z"
+      },
+      {
         "version": "0.2.8.0",
         "changelog": "v0.2.8: Merge Italian-wins + fill-gaps. Nuovo toggle OverwriteNonItalianFields (default false): AnimeClick emette solo i campi localizzati IT (titolo, trama, generi, tag, cast) e lascia OriginalTitle/anno/studio/rating/classificazione ad AniList/TMDB/OMDb; empty-guard non sovrascrive campi gia popolati con valori vuoti. Nuovo AnimeClickAnimeImageProvider: fallback locandina IT per Serie/Film (Order=100, riempie i buchi quando AniList/Fanart/TMDB non hanno immagini), toggle EnableAnimeClickImages (default true). Sinossi episodi IT opzionali via TMDB (overview EN di tv/season/episode) + Ollama Cloud (traduzione IT, modello cloud es. gemma4:cloud), cached per-episodio/per-modello; toggle EnableEpisodeSynopsisTranslation (default false) + chiavi TMDB/Ollama nei settings (le inserisce l'utente). Best-effort: in caso di fallimento la sinossi resta EN dagli altri provider, nessun crash. Nuovi servizi AnimeClickTmdbClient + AnimeClickOllamaTranslator registrati in DI. configPage: nuova sezione settings con dropdown modelli cloud (Consigliati/Altri/Personalizzato). README riscritto (filosofia, librerie supportate, tutorial sinossi IT con gating per tier, changelog). 10/10 test verdi.",
         "targetAbi": "10.11.8.0",
