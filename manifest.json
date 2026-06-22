@@ -28,6 +28,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "1.0.0.8",
+        "changelog": "Forced full sync now overwrites existing theme files instead of skipping them; added server-side POST /Plugins/KometaThemes/Sync/force endpoint so the Force sync button no longer races the scheduled task configuration read.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.0.8/KometaThemes.zip",
+        "checksum": "42B06531C802427EA16DAC8399F77563",
+        "timestamp": "2026-06-22T13:20:00Z"
+      },
+      {
         "version": "1.0.0.7",
         "changelog": "The interface language selector (English / Italiano, in the General tab) now switches the whole dashboard instantly when you pick it, instead of only after saving and reopening the page.",
         "targetAbi": "10.11.8.0",
