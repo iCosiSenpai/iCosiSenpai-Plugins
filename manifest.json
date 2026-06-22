@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.2.10.0",
+        "changelog": "v0.2.10: Redesign premium della pagina di configurazione. 4 schede in alto (Metadati / Sinossi episodi / Ricerca / Strumenti) con card raggruppate, icone e header premium (chip versione + link repo/issues). Pattern tab JS-driven riusato da KometaThemes, CSS inline (singolo EmbeddedResource). Rimossa la sezione Diagnostica developer-facing (Test lookup, Preview episodi raw, Stato Identify e i <pre> raw), rimpiazzata dal tab Strumenti: card Identifica & Aggiorna (workaround bug Jellyfin 10.11.x, ora con output umanizzato ✓/✗ + riepilogo immagini) e card Svuota cache metadati (singolo pulsante, nessun ID). Nuovo AnimeClickCacheService.ClearAll() + ramo 'corpo vuoto -> clear all' in POST /Plugins/AnimeClick/ClearCache. Nuova card Stato connessione provider con badge ✓/✗ + dettagli espandibili per i test TMDB/Ollama/TVDB (al posto del <pre> raw). Formalizza il fix {} sui pulsanti di test (dataType:'json' sui POST + showProviderError legge il body della Response raw). 12/12 test verdi, build 0 warning.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.10.0/AnimeClick.Plugin.v0.2.10.0.zip",
+        "checksum": "A74476E890AAE22BFB856F8846DF90A3",
+        "timestamp": "2026-06-22T17:40:00Z"
+      },
+      {
         "version": "0.2.9.0",
         "changelog": "v0.2.9: TheTVDB come fonte preferita di sinossi episodi in italiano. Nuovo servizio AnimeClickTvdbClient: login TVDB v4 (token cached 24h), risoluzione ID serie (/search?type=series, cached), lista episodi tradotta in una sola chiamata paginata (/series/{id}/episodes/default/{lang}, cached per serie+lingua). Quando TVDB ha la sinossi IT la usa direttamente — zero chiamate Ollama, zero compute sul NAS; se TVDB non ha la traduzione, fallback sul flusso esistente TMDB EN + Ollama IT. Nuovi toggle EnableTvdbSynopsis + TvdbApiKey + TvdbLanguage (default ita), opt-in. Pulsanti di test con errore dettagliato: Test TMDB / Test Ollama / Test TVDB nella sezione sinossi della config page validano le credenziali attualmente inserite (non serve salvare) e mostrano status HTTP, corpo della risposta e messaggio eccezione. Nuovi endpoint POST /Plugins/AnimeClick/TestTmdb|TestOllama|TestTvdb su AnimeClickDiagnosticsController + metodi TestConnectionAsync sui tre service (no silent-catch, DTO dettagliati). 12/12 test verdi (nuovi test TVDB URL building + parsing). README: tutorial sinossi riscritto (TVDB fonte preferita + fallback, sezione pulsanti di test, caveat TVDB).",
         "targetAbi": "10.11.8.0",
