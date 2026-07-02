@@ -13,7 +13,7 @@
         "changelog": "v0.3.4.0: Fix HTTP 415 sui pulsanti Test TMDB/Ollama/TVDB e Svuota cache. I POST dal frontend venivano inviati senza body e senza Content-Type, causando 415 da ASP.NET Core prima di contattare le API esterne.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.4.0/AnimeClick.Plugin.zip",
-        "checksum": "B150D3BFD7D50BEC12BCA207C37F6855",
+        "checksum": "D20C6FA9134A8CD16C1CC99E5DACDC0C",
         "timestamp": "2026-07-02T22:30:00Z"
       },
       {
