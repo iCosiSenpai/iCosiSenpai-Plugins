@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.3.5.0",
+        "changelog": "v0.3.5.0: Fix TVDB search (type=series filter broken in v4 API, filter client-side).",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.5.0/AnimeClick.Plugin.zip",
+        "checksum": "D48E56A737F493558A057A9A071A752B",
+        "timestamp": "2026-07-02T22:45:00Z"
+      },
+      {
         "version": "0.3.4.0",
         "changelog": "v0.3.4.0: Fix HTTP 415 sui pulsanti Test TMDB/Ollama/TVDB e Svuota cache. I POST dal frontend venivano inviati senza body e senza Content-Type, causando 415 da ASP.NET Core prima di contattare le API esterne.",
         "targetAbi": "10.11.8.0",
