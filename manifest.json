@@ -13,7 +13,7 @@
         "changelog": "v0.3.6.0: Fix TVDB tvdb_id restituito come stringa (API v4 /search) + fallback al campo id. Gestione accenti italiani in ricerca AnimeClick (RemoveDiacritics su query e scorer). Timeout 30s su IdentifyAndRefresh con risposta graceful. Ollama ParseTranslatedContent gestisce \\uXXXX e surrogate pairs. Attribution TheTVDB (banner config + README).",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.6.0/AnimeClick.Plugin.zip",
-        "checksum": "F52834B49B0293EDE4D07E8026B2B0C5",
+        "checksum": "50454798D3AA90633FB3F75611A46343",
         "timestamp": "2026-07-06T15:05:00Z"
       },
       {
