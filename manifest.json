@@ -140,6 +140,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "1.0.5.0",
+        "changelog": "v1.0.5.0: ForceSync centralization (explicit bool force param). Theme row keyboard support + SVG logo polish. Further UI/ARIA, harden, tests. Eligibility audit.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.5.0/KometaThemes.zip",
+        "checksum": "b242be49048a6b8b8e64eb99e5ab5db4",
+        "timestamp": "2026-07-13T23:45:57Z"
+      },
+      {
         "version": "1.0.4.1",
         "changelog": "v1.0.4.1: Refined IsItemEligible (better detection for edge cases like 'Belle'). Eligibility errors now translated when UiLanguage=Italian. Bug fixes for false 'not in library' on valid anime.",
         "targetAbi": "10.11.8.0",
