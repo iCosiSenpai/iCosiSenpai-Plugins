@@ -12,7 +12,7 @@
         "version": "0.3.8.0",
         "changelog": "v0.3.8.0: Fortificazione e ottimizzazione ricerca metadata. Filtro qualità immagini: MinPosterWidth (default 400px, ora in UI) — se AnimeClick fornisce locandina (o artwork) a bassa risoluzione viene automaticamente saltata e Jellyfin passa ad altri provider configurati (Fanart/AniList/TMDB). Probe efficiente con HTTP Range + cache. Search: cleaners robusti (sequel, fullwidth, &), scorer fuzzy migliorato, retry transienti nel client. Bugfix: versioning assembly corretto, UA dinamico, TvdbLanguage sanitizzato, Person images Order=100. Aggiornamenti UI e docs.",
         "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.8.0/AnimeClick.Plugin.zip",
+        "sourceUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/v0.3.8.0/AnimeClick.Plugin.zip",
         "checksum": "A31BD1E7B7020EB84D9E9981D7CD303E",
         "timestamp": "2026-07-13T23:30:00Z"
       },
