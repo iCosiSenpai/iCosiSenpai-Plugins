@@ -140,6 +140,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "1.0.4.0",
+        "changelog": "v1.0.4.0: Harden (no live config mutation, explicit force). Bug fixes for sync/non-anime. UI: keyboard for broad results + clearer labels.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.4.0/KometaThemes.zip",
+        "checksum": "6f75adbf7d18b5fefe1bfe9664afd8b3",
+        "timestamp": "2026-07-13T22:42:08Z"
+      },
+      {
         "version": "1.0.3.1",
         "changelog": "v1.0.3.1: Fixed Sync now / Force sync buttons (Sync now is now always incremental, ignores ForceSync checkbox). Prevented scanning non-anime folders in auto-sync, single-item sync and playlist. Eligibility gates added. No more unnecessary redownloads on normal sync.",
         "targetAbi": "10.11.8.0",
