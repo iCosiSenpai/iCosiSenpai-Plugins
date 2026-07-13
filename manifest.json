@@ -58,7 +58,7 @@
       },
       {
         "version": "0.3.1.0",
-        "changelog": "v0.3.1.0: Fix download immagini. GetImageResponse ora invia User-Agent/Referer (il CDN AnimeClick rifiutava le richieste senza UA → HTTP 403, locandine e foto staff non scaricate). Nuova opzione MinPosterWidth: scarta le locandine sotto la risoluzione minima e passa al provider successivo (Fanart/TMDB/AniList).",
+        "changelog": "v0.3.1.0: Fix download immagini. GetImageResponse ora invia User-Agent/Referer (il CDN AnimeClick rifiutava le richieste senza UA \u2192 HTTP 403, locandine e foto staff non scaricate). Nuova opzione MinPosterWidth: scarta le locandine sotto la risoluzione minima e passa al provider successivo (Fanart/TMDB/AniList).",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.1.0/AnimeClick.Plugin.v0.3.1.0.zip",
         "checksum": "62A95BCA593AA5FF00A7B1DDCDFF259D",
@@ -66,7 +66,7 @@
       },
       {
         "version": "0.3.0.0",
-        "changelog": "v0.3.0.0: Redesign completo del frontend — premium dashboard UI. Nuova interfaccia glassmorphism con gradienti animati, tipografia premium, micro-interazioni fluide, nuovi bottoni e badge. UX/UI migliorata con card più eleganti e layout rivisitato.",
+        "changelog": "v0.3.0.0: Redesign completo del frontend \u2014 premium dashboard UI. Nuova interfaccia glassmorphism con gradienti animati, tipografia premium, micro-interazioni fluide, nuovi bottoni e badge. UX/UI migliorata con card pi\u00f9 eleganti e layout rivisitato.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.0.0/AnimeClick.Plugin.zip",
         "checksum": "1CEE17BB5E7A26CB3A41BDC2AD2C1D35",
@@ -114,7 +114,7 @@
       },
       {
         "version": "0.2.6.0",
-        "changelog": "v0.2.6: Fix response body undefined (client JS leggeva PascalCase, ASP.NET Core serializza in camelCase) + fix RemoteImageQuery che passava providerName=string.Empty (filtrava per provider con nome vuoto, ritornando array vuoto per Primary/Backdrop/Logo/Art/Thumb). v0.2.6.0 usa providerName: null (tutti i provider) + IncludeDisabledProviders=true. Nuovo EnsureAniListIdAsync che interroga AniList GraphQL per titolo e salva l'AniList ID sull'item prima del download immagini (necessario perché AnimeClick non fornisce TMDB/IMDB/AniList ID, quindi senza AniList ID l'AniList ImageFetcher non può fare lookup). DownloadedImages list ora visualizzata in modo leggibile nel result box della configPage.",
+        "changelog": "v0.2.6: Fix response body undefined (client JS leggeva PascalCase, ASP.NET Core serializza in camelCase) + fix RemoteImageQuery che passava providerName=string.Empty (filtrava per provider con nome vuoto, ritornando array vuoto per Primary/Backdrop/Logo/Art/Thumb). v0.2.6.0 usa providerName: null (tutti i provider) + IncludeDisabledProviders=true. Nuovo EnsureAniListIdAsync che interroga AniList GraphQL per titolo e salva l'AniList ID sull'item prima del download immagini (necessario perch\u00e9 AnimeClick non fornisce TMDB/IMDB/AniList ID, quindi senza AniList ID l'AniList ImageFetcher non pu\u00f2 fare lookup). DownloadedImages list ora visualizzata in modo leggibile nel result box della configPage.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.6.0/AnimeClick.Plugin.v0.2.6.0.zip",
         "checksum": "D364E52154F544865354E4BED1A0DADD",
@@ -131,6 +131,14 @@
     "description": "KometaThemes automatically downloads anime theme songs (OPs and EDs) from animethemes.moe. Features multi-season detection, AllPerSeason fetch, multi-provider resolution, parallel downloads, global playlist generation, REST API, and bilingual Italian/English UI.",
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
+      {
+        "version": "1.0.3.0",
+        "changelog": "v1.0.3.0: LibraryPattern now gates \u266a button + item UI (non-anime fix). IsItemEligible + /eligible + guards. Theme Finder: keyboard nav (arrows/Home/End/Enter/Esc), clear button, ARIA (listbox/activedescendant), strong focus/active/hover visuals. All prior harden + filters included. Version per AGENTS.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.3.0/KometaThemes.zip",
+        "checksum": "5a2368ea6807e871c92acfcedffbc5c4",
+        "timestamp": "2026-07-13T21:24:42Z"
+      },
       {
         "version": "1.0.2.0",
         "changelog": "v1.0.2.0: Completed Theme Finder quick filters (Audio/Video, OP/ED, Creditless only) with 'Select visible' and clear. Per-season group bulk select buttons. Full active filter state. Parser hardening + new tests. Config bounds enforcement (NormalizeBounds). Auth policies standardized to Policies.RequiresElevation. UI polish and responsive updates. Version bump per AGENTS.md.",
