@@ -156,6 +156,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "1.0.6.0",
+        "changelog": "v1.0.6.0: Frontend remake e hardening condiviso per configurazione, Theme Finder e pagina item. Nuova navigazione tab da tastiera, modali accessibili con focus trap, live region, layout responsive e stati busy. Fix per risposte asincrone obsolete, doppi invii, filtri Audio/Video e bulk selection, URL remoti e messaggi API sanitizzati. Nessuna breaking change.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.6.0/KometaThemes.zip",
+        "checksum": "ce4ffb86f567bc1c9d3d8736c9623d89",
+        "timestamp": "2026-07-22T11:55:26Z"
+      },
+      {
         "version": "1.0.5.1",
         "changelog": "v1.0.5.1: Further centralize ForceSync (explicit param), theme rows keyboard, SVG logo polish, more UI/harden.",
         "targetAbi": "10.11.8.0",
