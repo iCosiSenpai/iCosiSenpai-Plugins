@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.4.1.0",
+        "changelog": "v0.4.1.0: Resolver episodi/stagioni v5 fail-safe con layout multipli, separazione tra episodi regolari e speciali, override deterministici e cache single-flight; diagnostica e frontend aggiornati con banner/footer; documentazione Ollama EN→IT ampliata.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.4.1.0/AnimeClick.Plugin.zip",
+        "checksum": "DFB6D3D0C457F4A18F4FC6FFC6F7A571",
+        "timestamp": "2026-07-22T01:27:38Z"
+      },
+      {
         "version": "0.4.0.0",
         "changelog": "v0.4.0.0: AnimeClick-first con authority layer lock-aware, resolver stagioni v4, metadati semantici estesi, coda asincrona Ollama con backoff e cache content-addressed, e fix E14-E26 per stagioni sintetiche.",
         "targetAbi": "10.11.8.0",
