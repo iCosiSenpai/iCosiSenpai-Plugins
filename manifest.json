@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.4.4.0",
+        "changelog": "v0.4.4.0: audit del codice in tre giri, senza nuove funzionalità. Correttezza: le righe “Speciale” non diventano più episodi numerati con l'anno (prima spostavano la numerazione degli episodi successivi o rompevano la divisione automatica in stagioni), e il filtro sulle locandine a bassa risoluzione non si disattiva più da solo. Sicurezza: allow-list host HTTPS su tutti gli URL immagine (serie, film, episodi, stagioni e anteprime di ricerca), tetto di 15 minuti al Retry-After del server per non bloccare lo scraping fino al riavvio, impostazioni validate sul server e non solo nella pagina di configurazione. Robustezza: timeout e limiti di dimensione su tutte le chiamate di rete, budget sul recupero della lista episodi di TheTVDB, token TheTVDB scartato quando viene rifiutato invece di essere riusato per 24 ore, errori di chiave API e di rete ora visibili nel log invece che solo a livello Debug, un errore di scrittura della cache non fa più perdere i metadati dell'elemento, e cache per le foto degli autori.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.4.4.0/AnimeClick.Plugin.zip",
+        "checksum": "E02698DEC1EEE30610DB79D35F5F1E78",
+        "timestamp": "2026-07-29T21:48:05Z"
+      },
+      {
         "version": "0.4.3.0",
         "changelog": "v0.4.3.0: voce del plugin nella sidebar del pannello di controllo; banner del footer mostrato per intero; fix SSRF sugli URL immagine di serie/film (allow-list host HTTPS); HttpClient via IHttpClientFactory per evitare collisioni tra versioni; rimozione di memory leak nei lock, pulizia dello stato più efficiente e parsing/regex indipendenti dal locale; modello Ollama Cloud predefinito ora gpt-oss:20b-cloud con migrazione automatica.",
         "targetAbi": "10.11.8.0",
