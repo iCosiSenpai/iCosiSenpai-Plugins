@@ -53,7 +53,7 @@
         "changelog": "v0.3.7.0: Fix multi-stagione quando AnimeClick elenca episodi in blocco unico (es. The Asterisk War 24ep/2cour). Parser sintetizza SeasonNumber da <dt>Stagioni</dt> main-page. Matches S2 via seasonOrdinal.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.7.0/AnimeClick.Plugin.zip",
-        "checksum": "0ABF5181BE6736090C722BCFBB9599FF",
+        "checksum": "CF5C268066CA5FDC764D096567394CB8",
         "timestamp": "2026-07-07T00:15:00Z"
       },
       {
@@ -69,7 +69,7 @@
         "changelog": "v0.3.5.0: Fix TVDB search (type=series filter broken in v4 API, filter client-side).",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.5.0/AnimeClick.Plugin.zip",
-        "checksum": "D48E56A737F493558A057A9A071A752B",
+        "checksum": "1E93D402D33C6269EE7EEE5B67A7C837",
         "timestamp": "2026-07-02T22:45:00Z"
       },
       {
