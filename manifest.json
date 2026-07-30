@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.4.5.0",
+        "changelog": "v0.4.5.0: rilascio di correzioni, tre difetti trovati provando il plugin su una libreria reale. Le sinossi italiane da TheTVDB non hanno mai funzionato: la pagina episodi veniva scartata per una forma di risposta assunta male, e su otto serie di prova TheTVDB aveva 119 sinossi italiane su 212 episodi, tutte irraggiungibili. Le sinossi di AnimeClick mancavano su ogni episodio con un accento nel titolo, perché l'identificativo salvato veniva rifiutato dal plugin stesso: il 13% degli episodi in prova. Una stagione intera poteva ricevere i titoli sfalsati di una posizione quando la tabella di AnimeClick contiene più righe di quante ne dichiari: ora la discordanza viene rilevata e serve la conferma del titolo del file, altrimenti l'episodio resta intatto. Inoltre: i titoli che ripetono solo il numero non vengono più scritti, la coda delle traduzioni non può più fermarsi in silenzio, e verso TheTVDB, TMDB e AniList c'è un passo minimo con rispetto delle richieste di rallentamento.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.4.5.0/AnimeClick.Plugin.zip",
+        "checksum": "79019B1EA778CB3639C434B9E8DC8601",
+        "timestamp": "2026-07-30T16:43:24Z"
+      },
+      {
         "version": "0.4.4.0",
         "changelog": "v0.4.4.0: audit del codice in tre giri, senza nuove funzionalità. Correttezza: le righe “Speciale” non diventano più episodi numerati con l'anno (prima spostavano la numerazione degli episodi successivi o rompevano la divisione automatica in stagioni), e il filtro sulle locandine a bassa risoluzione non si disattiva più da solo. Sicurezza: allow-list host HTTPS su tutti gli URL immagine (serie, film, episodi, stagioni e anteprime di ricerca), tetto di 15 minuti al Retry-After del server per non bloccare lo scraping fino al riavvio, impostazioni validate sul server e non solo nella pagina di configurazione. Robustezza: timeout e limiti di dimensione su tutte le chiamate di rete, budget sul recupero della lista episodi di TheTVDB, token TheTVDB scartato quando viene rifiutato invece di essere riusato per 24 ore, errori di chiave API e di rete ora visibili nel log invece che solo a livello Debug, un errore di scrittura della cache non fa più perdere i metadati dell'elemento, e cache per le foto degli autori.",
         "targetAbi": "10.11.8.0",
