@@ -188,6 +188,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "1.1.0.0",
+        "changelog": "v1.1.0.0: Novità — ora si possono aggiungere opening ed ending che animethemes.moe non ha, incollando un link YouTube nel Theme Finder: al momento dell'inserimento viene chiesto se è una OP o una ED e se si vuole audio, video o entrambi. La funzione è disattivata per impostazione predefinita e richiede yt-dlp installato nell'ambiente di Jellyfin; le impostazioni indicano se è stato trovato. Correzioni importanti sulla perdita di dati: una conversione interrotta non lascia più un file di tema danneggiato che tutti i sync successivi saltavano come \"già scaricato\", senza che nessun sync o force sync potesse ripararlo; l'eliminazione di un elemento non cancella più in blocco le cartelle theme-music e backdrops, che in una libreria piatta distruggeva i temi di tutti gli altri elementi e le fanart dell'utente; un force sync non elimina più file che non ha creato lui, compresi quelli aggiunti dal Theme Finder; la cache e la lista dei non risolti sopravvivono a uno spegnimento improvviso. I temi il cui download è fallito restano nella lista \"Non risolti\" invece di sparire silenziosamente, e annullare un sync lascia uno stato concluso invece di una barra bloccata. Corretti inoltre: i video di tema grandi non vengono più interrotti dopo 30 secondi, un errore di un singolo provider non blocca più la risoluzione di tutta la libreria, le librerie con più di 100 elementi non vengono più ignorate in parte, i sequel e le stagioni successive non vengono più associati con certezza alla voce sbagliata, e la playlist trova anche gli elementi in sottocartelle. Interfaccia: il pulsante ♪ non interroga più il server ogni 1,5 secondi, la tastiera nel Theme Finder non seleziona più l'audio quando si attiva l'anteprima o il video, e i temi scelti su più stagioni vengono attribuiti all'anime corretto. Nessuna breaking change.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.1.0.0/KometaThemes.zip",
+        "checksum": "4d3ed7582e7ca1555b6e6ed60c461bfd",
+        "timestamp": "2026-08-03T17:26:00Z"
+      },
+      {
         "version": "1.0.8.0",
         "changelog": "v1.0.8.0: Nuova icona di brand unificata (cometa + nota musicale) ad alto contrasto, mostrata in modo coerente in tutte le pagine del plugin, nell'azione Theme Finder e nella sidebar della dashboard Jellyfin. L'icona ora è un unico asset SVG incorporato al posto delle copie inline duplicate; la voce nella sidebar non mostra più la cartella generica. Nessuna breaking change.",
         "targetAbi": "10.11.8.0",
