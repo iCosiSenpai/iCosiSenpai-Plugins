@@ -196,6 +196,14 @@
     "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
     "versions": [
       {
+        "version": "1.3.1.0",
+        "changelog": "v1.3.1.0: The Theme Finder no longer shows a message about yt-dlp. Opening it on a server without the extractor produced an error-styled panel reading \"yt-dlp was not found. Install it in the Jellyfin environment, or set its full path in the plugin settings.\", in the middle of the page you opened to add a theme; an install instruction for a command-line tool is not an answer to that intent, and it made a feature that was never enabled look broken. When YouTube import is turned off, or the extractor is not installed, the import card is simply not shown. Whether the extractor was found, and where it was searched for, is still reported on the plugin settings page, directly below the YouTube import toggle and the yt-dlp path field, which is where it is actionable. Release build with no warnings, 213 unit tests and 13 browser tests; two new tests assert the card is absent, one for a missing extractor and one for the feature being off, and check that the string yt-dlp appears nowhere in the page. No breaking changes.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.3.1.0/KometaThemes.zip",
+        "checksum": "fa3b6c3f7aceaaa2151756779401124e",
+        "timestamp": "2026-08-03T21:52:13Z"
+      },
+      {
         "version": "1.3.0.0",
         "changelog": "v1.3.0.0: The plugin interface is English only. The Italian translation and the interface-language setting in the General tab have been removed, along with the language machinery behind them: each page now ships one string table instead of two, and a missing string shows its key rather than rendering blank. Existing configurations keep working — the stored language value is simply ignored, so no settings are lost on upgrade. Italian season names are deliberately still recognised: \"2ª Stagione\", \"2° Stagione\" and \"stagione 2\" continue to resolve to season 2, because those are folder and series names read from your library rather than interface text, and dropping them would have silently broken season detection for Italian-named libraries. Release build with no warnings, 213 unit tests and 12 interface and accessibility tests; the browser count is down from 15 because the axe audit no longer runs every page twice, once per language. No breaking changes.",
         "targetAbi": "10.11.8.0",
