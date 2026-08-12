@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.5.1.0",
+        "changelog": "Audit qualità della libreria e riparazione sicura delle sinossi; abbinamento episodi e stagioni più rigoroso; coda traduzioni AI resiliente con refresh Overview-only; cache e invalidazione corrette.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.1.0/AnimeClick.Plugin.zip",
+        "checksum": "BB4B759CFAB0EE5656B40B3AFBA4C038",
+        "timestamp": "2026-08-12T00:19:57Z"
+      },
+      {
         "version": "0.5.0.0",
         "changelog": "v0.5.0.0: rilascio di funzionalità. La traduzione automatica non è più legata a un solo fornitore: il servizio si sceglie da un menu fra Ollama (in rete o in casa), OpenAI, Anthropic Claude, Google Gemini, Mistral, Groq, DeepSeek, OpenRouter, Together, xAI Grok, LM Studio o qualunque endpoint compatibile OpenAI. Il nome del modello non ha più un valore predefinito, di proposito: i fornitori li ritirano e rinominano, quindi il plugin chiede l'elenco al servizio con il pulsante «Elenca modelli». Chi aveva già configurato Ollama non deve fare niente, il profilo salvato viene travasato al primo avvio. Non è possibile usare un abbonamento ChatGPT o Claude al posto di una chiave API: l'API è fatturata a parte e Anthropic vieta l'uso dei token dei piani consumer fuori dai suoi programmi. Nuova scheda Libreria: analizza la copertura dei titoli leggendo solo le schede già in cache, quindi senza richieste ad AnimeClick, e per ogni serie e stagione dice quale delle nove cause spiega un titolo mancante, con i pulsanti per rileggere la scheda, svuotarne la cache o avviare subito il ricontrollo. Il ricontrollo settimanale ora sceglie con la stessa classificazione, invece di spendere il budget sulle schede che non pubblicano titoli e di ignorare per sempre gli episodi mai abbinati. Corretti due abbinamenti: uno spin-off numerato nella stessa tabella azzerava le coordinate di ogni riga (27 titoli irraggiungibili su una sola serie) e gli extra numerati oltre la serie regolare non venivano più trovati. Timeout della traduzione portato a 90 secondi: il tetto di 30 tagliava richieste sane.",
         "targetAbi": "10.11.8.0",
