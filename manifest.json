@@ -239,10 +239,18 @@
     "owner": "KometaThemes",
     "name": "KometaThemes",
     "guid": "48c98707-45d1-43ac-94b8-f74d875ad29c",
-    "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/KometaThemes/main/assets/banner-readme-plugin.png",
-    "description": "KometaThemes automatically downloads anime theme songs (OPs and EDs) from animethemes.moe. Features multi-season detection, AllPerSeason fetch, multi-provider resolution, parallel downloads, global playlist generation, REST API, and bilingual Italian/English UI.",
-    "overview": "Download anime OP/ED from animethemes.moe with multi-provider, multi-season, and playlist support.",
+    "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/KometaThemes/main/Jellyfin.Plugin.KometaThemes/Web/assets/kometathemes-icon.png",
+    "description": "KometaThemes automatically downloads anime opening and ending themes from AnimeThemes. It supports metadata-aware matching, multi-season libraries, audio and video themes, manual bindings, YouTube imports, per-item tools and playlist generation.",
+    "overview": "Bring anime openings and endings into Jellyfin automatically.",
     "versions": [
+      {
+        "version": "1.4.1.0",
+        "changelog": "v1.4.1.0: Replaces the generic comet mark with an original anime mascot across every plugin page, the item action, Jellyfin's dashboard sidebar, GitHub and the plugin catalog. Rewrites the README around installation, first-time setup and everyday workflows, and corrects outdated interface-language and YouTube extractor requirements. Release build with no warnings, 221 unit tests and 14 browser and accessibility tests. No breaking changes.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.4.1.0/KometaThemes.zip",
+        "checksum": "57c612791794a7805c056ba72a219d49",
+        "timestamp": "2026-08-13T18:42:23Z"
+      },
       {
         "version": "1.4.0.0",
         "changelog": "v1.4.0.0: YouTube import no longer needs anything installed. The extractor now travels inside the plugin package, so pasting a link works on a stock Jellyfin server; previously the feature reported that yt-dlp was missing and did nothing until somebody installed it by hand inside the container, where it also disappeared on the next container update. yt-dlp is still supported and is still preferred automatically when present, with no configuration, because it tracks YouTube's changes continuously while a bundled copy only moves when this plugin is released; neither is required, and the settings page reports which of the two is in use. Video is assembled from a container-matched video and audio pair rather than taken from one of YouTube's pre-muxed streams, which top out at 360p; the join is a stream copy, so it costs no re-encode, measured against real YouTube at 1080p VP9 plus Opus with 0.9s to download and 5.2s to join. Packaging note: the archive now contains four assemblies instead of one — the plugin plus YoutubeExplode, AngleSharp and JsonExtensions. Install through the plugin catalog as usual, Jellyfin unpacks all of them. The archive is packed from an explicit list rather than from the build output folder, which also holds around thirty Jellyfin and Microsoft.Extensions assemblies that must not ship, and the build fails if that set ever changes. Release build with no warnings, 220 unit tests and 14 browser tests. No breaking changes.",
