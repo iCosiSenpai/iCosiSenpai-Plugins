@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "0.5.4.0",
+        "changelog": "Le sinossi degli episodi tornano anche per gli anime lunghi tenuti in una sola stagione: il numero assoluto pubblicato da TheTVDB viene letto senza richieste aggiuntive e su TMDB viene tradotto nella coppia stagione/episodio reale, solo quando la coordinata richiesta non può esistere.",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.4.0/AnimeClick.Plugin.zip",
+        "checksum": "D5EACE602DF4714684377B90D1BA8519",
+        "timestamp": "2026-08-13T13:15:11Z"
+      },
+      {
         "version": "0.5.3.0",
         "changelog": "L'audit ricorda l'esito di ogni riparazione: le sinossi che nessuna fonte ha escono dal lotto automatico invece di essere riproposte a vuoto, quelle in attesa di traduzione non vengono riaccodate e il lotto si distribuisce fra le serie.",
         "targetAbi": "10.11.8.0",
