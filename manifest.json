@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
       {
+        "version": "1.0.0.0",
+        "changelog": "Major per Jellyfin 12 e .NET 10, verificata su 12.0 e 12.1. Interfaccia riprogettata con guida iniziale, preferenze semplici e strumenti avanzati separati. Identificazione automatica più prudente fra titoli simili, remake e stagioni; correzione manuale cercando il titolo in libreria e incollando il link AnimeClick, senza cancellazione diretta delle immagini. Corretti redirect di rete, collisioni e scadenza della cache, concorrenza nei refresh, rate limit e coerenza della coda traduzioni. AI opzionale e disattivabile senza perdere il profilo; impostazioni e credenziali esistenti conservate. 210 test backend per versione server e 11 test browser. Richiede Jellyfin 12.0 o successivo: non installare su 10.11; le release precedenti restano disponibili. Dettagli e limiti delle verifiche nel rapporto di audit della release.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.0.0.0/AnimeClick.Plugin.zip",
+        "checksum": "8963EC715ED36D7687E1A973B180AB0E",
+        "timestamp": "2026-09-28T22:59:18Z"
+      },
+      {
         "version": "0.5.8.0",
         "changelog": "AniList ha disattivato la propria API e risponde 403 a chiunque. Il plugin ci riprovava a ogni elemento della libreria, due volte per elemento, pagando ogni volta il ritardo fra le richieste e scrivendo centinaia di avvisi identici. Ora dopo tre fallimenti di fila le chiamate vengono sospese e si riprova dopo cinque minuti, poi dieci, venti, fino a un'ora, con un solo tentativo alla volta; al ritorno di AniList l'interruttore si riarma da solo. Un rate limit o un annullamento non contano come fallimento, e con le richieste sospese non viene scritta alcuna cache negativa. Titoli, trame, generi e cast non dipendono da AniList e non cambiano.",
         "targetAbi": "10.11.8.0",
