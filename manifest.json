@@ -2,12 +2,84 @@
   {
     "guid": "1bd83d2a-f1a1-4ee5-a09b-22f4ed1f0a11",
     "name": "AnimeClick Metadata",
-    "description": "Provider metadati anime in italiano basato su AnimeClick.it con scraping etico e cache locale.",
-    "overview": "Fornisce titoli, trame, generi, valutazioni e cover art in italiano per anime, utilizzando AnimeClick.it come fonte.",
+    "description": "Titoli, trame, generi, cast ed episodi degli anime in italiano da AnimeClick.it, completati da AniList, TMDB, TheTVDB e Fanart. Richiede Jellyfin 12.0 o successivo.",
+    "overview": "Metadati anime in italiano da AnimeClick.it, con setup guidato, vetrina, libreria a locandine e una comunità che condivide le correzioni degli abbinamenti. Solo per Jellyfin 12.0 o successivo.",
     "owner": "iCosiSenpai",
     "category": "Metadata",
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/main/assets/banner-plugin-interno.png",
     "versions": [
+      {
+        "version": "1.6.0.0",
+        "changelog": "Corretto il doppio caricamento dopo un aggiornamento (issue #2): lo ZIP contiene un meta.json con il nome del plugin, così Jellyfin tiene tutte le versioni sotto lo stesso nome e rimuove la vecchia, e all'avvio il plugin segna come superate le proprie copie più vecchie. Licenza AGPLv3 con termini aggiuntivi (attribuzione, versioni modificate riconoscibili, marchi e mascotte); attribuzione e link al codice sorgente nella pagina del plugin. Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.6.0.0/AnimeClick.Plugin.zip",
+        "checksum": "B80AA8D46D956EDAED1D6167268C2381",
+        "timestamp": "2026-10-05T18:48:28Z"
+      },
+      {
+        "version": "1.5.0.0",
+        "changelog": "AniList come fonte senza chiave insieme a TMDB: cast giapponese con i personaggi, studio di animazione, date, stato, voto, trailer, copertina e banner, solo nei campi vuoti. L'anno di una stagione senza date arriva dalla catena dei sequel di AniList, se gli episodi coincidono. Gli ID AniList che non corrispondono per tipo o anno vengono ignorati. Nuovo passo AniList nel setup. Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.5.0.0/AnimeClick.Plugin.zip",
+        "checksum": "4562B908044C78197BAF4F2980438D39",
+        "timestamp": "2026-10-05T16:20:23Z"
+      },
+      {
+        "version": "1.4.0.0",
+        "changelog": "Comunità per tutti: dopo una correzione il plugin chiede se condividerla e la invia tramite il servizio della comunità, senza account; il token GitHub diventa facoltativo. Si condividono anche le stagioni con una scheda propria, applicate agli altri solo se numero di stagione ed episodi coincidono. Elenco approvato aggiornato ogni giorno, controlli automatici e approvazione con un'etichetta, tessera Comunità in Inizio, passo Comunità nel setup e scelta della stagione in «Correggi un abbinamento». Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.4.0.0/AnimeClick.Plugin.zip",
+        "checksum": "3633329E5827A1214F598325D26CAFA1",
+        "timestamp": "2026-10-04T21:38:40Z"
+      },
+      {
+        "version": "1.3.0.0",
+        "changelog": "Pagina del plugin rifatta da zero con l'identità di AnimeClick: setup guidato al primo avvio e solo i passi nuovi dopo gli aggiornamenti importanti, vetrina degli ultimi anime aggiornati, cruscotto della collezione, libreria a locandine con titoli e trame uniti per anime, attivazione delle librerie a un clic e ricerca della scheda su AnimeClick per correggere un abbinamento. Corretti i conteggi dell'analisi di una singola serie, lo stato della condivisione comunitaria appena attivata e «Da verificare», che ora coincide con quanto «Sistema tutti i titoli» ricontrolla. Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.3.0.0/AnimeClick.Plugin.zip",
+        "checksum": "32EC545FDD733EEAA94BD3481352E48F",
+        "timestamp": "2026-10-04T11:47:27Z"
+      },
+      {
+        "version": "1.2.2.0",
+        "changelog": "Scarta i titoli alternativi di un'altra stagione verificando il titolo inglese originale. Quando manca una fonte coerente, traduce il titolo inglese già valido; esclude i nomi dei file. Correzione trovata sul NAS in anteprima, senza salvare la proposta errata. Include le novità 1.2.1. Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.2.2.0/AnimeClick.Plugin.zip",
+        "checksum": "20032C59DA93ACB1C415175003CAB3CA",
+        "timestamp": "2026-10-03T16:01:57Z"
+      },
+      {
+        "version": "1.2.0.0",
+        "changelog": "AnimeClick come unico provider remoto per le librerie anime: identificazione TMDB verificata, completamento dei metadati senza altri plugin e immagini integrate Fanart → TMDB → AnimeClick. Chiavi Fanart personale e di progetto nelle impostazioni, con link e verifica. Numerazione, campi bloccati e immagini esistenti conservati. Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.2.0.0/AnimeClick.Plugin.zip",
+        "checksum": "1396E1D7DF19F231408B7CEF4960201F",
+        "timestamp": "2026-10-02T23:24:30Z"
+      },
+      {
+        "version": "1.1.2.0",
+        "changelog": "AnimeClick primo campo per campo: i valori generici lasciano spazio alle fonti configurate. Recupero italiano e traduzione dall’inglese anche per serie, film, generi e tag, senza mescolare titolo e trama. Le immagini conservano la precedenza dei provider ad alta risoluzione; nessun aggiornamento immagini o riparazione viene avviato dall’installazione. Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.1.2.0/AnimeClick.Plugin.zip",
+        "checksum": "DCA8A247D085A15933F23DC3F0CFC746",
+        "timestamp": "2026-10-02T15:05:52Z"
+      },
+      {
+        "version": "1.1.1.0",
+        "changelog": "Titoli episodio mancanti: ricerca su TheTVDB e TMDB configurati dopo AnimeClick, precedenza all’italiano e traduzione dei soli titoli inglesi con il profilo AI esistente. Verifica degli ID esterni, conservazione dei titoli compilati e indicazione della fonte nell’avanzamento. Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.1.1.0/AnimeClick.Plugin.zip",
+        "checksum": "D02313E5BEA7A2A27AF8A0B32A3456A4",
+        "timestamp": "2026-10-02T13:36:40Z"
+      },
+      {
+        "version": "1.1.0.0",
+        "changelog": "La tua libreria con analisi automatica, viste separate, avanzamento reale e interruzione dei lavori. Recupero dei soli titoli mancanti con protezione dei metadati esistenti. Abbinamenti della comunità e invio automatico delle correzioni su GitHub, entrambi facoltativi e disattivati di default. Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.1.0.0/AnimeClick.Plugin.zip",
+        "checksum": "CDE74FBE71927AB9A02578E85485570D",
+        "timestamp": "2026-10-02T11:15:56Z"
+      },
       {
         "version": "1.0.0.0",
         "changelog": "Major per Jellyfin 12 e .NET 10, verificata su 12.0 e 12.1. Interfaccia riprogettata con guida iniziale, preferenze semplici e strumenti avanzati separati. Identificazione automatica più prudente fra titoli simili, remake e stagioni; correzione manuale cercando il titolo in libreria e incollando il link AnimeClick, senza cancellazione diretta delle immagini. Corretti redirect di rete, collisioni e scadenza della cache, concorrenza nei refresh, rate limit e coerenza della coda traduzioni. AI opzionale e disattivabile senza perdere il profilo; impostazioni e credenziali esistenti conservate. 210 test backend per versione server e 11 test browser. Richiede Jellyfin 12.0 o successivo: non installare su 10.11; le release precedenti restano disponibili. Dettagli e limiti delle verifiche nel rapporto di audit della release.",
@@ -15,246 +87,6 @@
         "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v1.0.0.0/AnimeClick.Plugin.zip",
         "checksum": "8963EC715ED36D7687E1A973B180AB0E",
         "timestamp": "2026-09-28T22:59:18Z"
-      },
-      {
-        "version": "0.5.8.0",
-        "changelog": "AniList ha disattivato la propria API e risponde 403 a chiunque. Il plugin ci riprovava a ogni elemento della libreria, due volte per elemento, pagando ogni volta il ritardo fra le richieste e scrivendo centinaia di avvisi identici. Ora dopo tre fallimenti di fila le chiamate vengono sospese e si riprova dopo cinque minuti, poi dieci, venti, fino a un'ora, con un solo tentativo alla volta; al ritorno di AniList l'interruttore si riarma da solo. Un rate limit o un annullamento non contano come fallimento, e con le richieste sospese non viene scritta alcuna cache negativa. Titoli, trame, generi e cast non dipendono da AniList e non cambiano.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.8.0/AnimeClick.Plugin.zip",
-        "checksum": "B2987760FC57445F10CA7AB35CAA978D",
-        "timestamp": "2026-09-07T20:44:35Z"
-      },
-      {
-        "version": "0.5.7.0",
-        "changelog": "AnimeClick e' passato a Bootstrap 5 e la ricerca non trovava piu' nulla: ogni query tornava zero risultati, in silenzio, quindi nessun titolo aggiunto dopo il cambio del sito poteva essere riconosciuto. Ripristinati ricerca, staff e opere collegate. La ricerca ora ripulisce i nomi delle release, accorcia il titolo finche' non trova, e rifiuta gli abbinamenti deboli invece di prendere il primo che capita. Se AnimeClick ha la scheda ma non la trama, la sinossi italiana arriva da TMDB. Le fixture dei test sono HTML scaricato dal sito, cosi' un prossimo cambio di markup si vede subito.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.7.0/AnimeClick.Plugin.zip",
-        "checksum": "D618A3D59EEBBDF96BF2D2B733AD2539",
-        "timestamp": "2026-09-07T18:32:11Z"
-      },
-      {
-        "version": "0.5.6.0",
-        "changelog": "Via il tetto di 200 episodi: il ricontrollo dei titoli lavora tutto l'arretrato, protetto dal ritardo fra le richieste. I titoli mancanti sono divisi fra recuperabili, in attesa della fonte e non recuperabili. La pagina perde contatori e pulsanti superflui: i numeri filtrano con un clic e la selezione manuale resta solo sui titoli incerti.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.6.0/AnimeClick.Plugin.zip",
-        "checksum": "B25BDB9640E9C428EAF6C2BA3AC37CC7",
-        "timestamp": "2026-08-13T18:21:04Z"
-      },
-      {
-        "version": "0.5.5.0",
-        "changelog": "Completare le sinossi è un clic solo: «Completa tutte le sinossi» avvia un'attività che procede a lotti e si ferma da sola quando non resta niente su cui agire, continuando anche a pagina chiusa. La stessa attività è pianificata ogni settimana.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.5.0/AnimeClick.Plugin.zip",
-        "checksum": "F48D69129A275CC8764874CD6D13882F",
-        "timestamp": "2026-08-13T15:36:47Z"
-      },
-      {
-        "version": "0.5.4.0",
-        "changelog": "Le sinossi degli episodi tornano anche per gli anime lunghi tenuti in una sola stagione: il numero assoluto pubblicato da TheTVDB viene letto senza richieste aggiuntive e su TMDB viene tradotto nella coppia stagione/episodio reale, solo quando la coordinata richiesta non può esistere.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.4.0/AnimeClick.Plugin.zip",
-        "checksum": "D5EACE602DF4714684377B90D1BA8519",
-        "timestamp": "2026-08-13T13:15:11Z"
-      },
-      {
-        "version": "0.5.3.0",
-        "changelog": "L'audit ricorda l'esito di ogni riparazione: le sinossi che nessuna fonte ha escono dal lotto automatico invece di essere riproposte a vuoto, quelle in attesa di traduzione non vengono riaccodate e il lotto si distribuisce fra le serie.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.3.0/AnimeClick.Plugin.zip",
-        "checksum": "AE44115F425DC16533DB926B5D992DD5",
-        "timestamp": "2026-08-13T11:36:23Z"
-      },
-      {
-        "version": "0.5.2.0",
-        "changelog": "Audit libreria più leggibile su desktop e mobile, con ricerca, filtri, sezioni progressive e controlli bulk sicuri per titoli e sinossi.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.2.0/AnimeClick.Plugin.zip",
-        "checksum": "F9A8AC539C87C2B68EB286FDA2A763EC",
-        "timestamp": "2026-08-12T11:24:37Z"
-      },
-      {
-        "version": "0.5.1.0",
-        "changelog": "Audit qualità della libreria e riparazione sicura delle sinossi; abbinamento episodi e stagioni più rigoroso; coda traduzioni AI resiliente con refresh Overview-only; cache e invalidazione corrette.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.1.0/AnimeClick.Plugin.zip",
-        "checksum": "BB4B759CFAB0EE5656B40B3AFBA4C038",
-        "timestamp": "2026-08-12T00:19:57Z"
-      },
-      {
-        "version": "0.5.0.0",
-        "changelog": "v0.5.0.0: rilascio di funzionalità. La traduzione automatica non è più legata a un solo fornitore: il servizio si sceglie da un menu fra Ollama (in rete o in casa), OpenAI, Anthropic Claude, Google Gemini, Mistral, Groq, DeepSeek, OpenRouter, Together, xAI Grok, LM Studio o qualunque endpoint compatibile OpenAI. Il nome del modello non ha più un valore predefinito, di proposito: i fornitori li ritirano e rinominano, quindi il plugin chiede l'elenco al servizio con il pulsante «Elenca modelli». Chi aveva già configurato Ollama non deve fare niente, il profilo salvato viene travasato al primo avvio. Non è possibile usare un abbonamento ChatGPT o Claude al posto di una chiave API: l'API è fatturata a parte e Anthropic vieta l'uso dei token dei piani consumer fuori dai suoi programmi. Nuova scheda Libreria: analizza la copertura dei titoli leggendo solo le schede già in cache, quindi senza richieste ad AnimeClick, e per ogni serie e stagione dice quale delle nove cause spiega un titolo mancante, con i pulsanti per rileggere la scheda, svuotarne la cache o avviare subito il ricontrollo. Il ricontrollo settimanale ora sceglie con la stessa classificazione, invece di spendere il budget sulle schede che non pubblicano titoli e di ignorare per sempre gli episodi mai abbinati. Corretti due abbinamenti: uno spin-off numerato nella stessa tabella azzerava le coordinate di ogni riga (27 titoli irraggiungibili su una sola serie) e gli extra numerati oltre la serie regolare non venivano più trovati. Timeout della traduzione portato a 90 secondi: il tetto di 30 tagliava richieste sane.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.5.0.0/AnimeClick.Plugin.zip",
-        "checksum": "02F475CEFA3D8820DEF6ADBA19B50FCD",
-        "timestamp": "2026-08-03T18:59:52Z"
-      },
-      {
-        "version": "0.4.5.0",
-        "changelog": "v0.4.5.0: rilascio di correzioni, tre difetti trovati provando il plugin su una libreria reale. Le sinossi italiane da TheTVDB non hanno mai funzionato: la pagina episodi veniva scartata per una forma di risposta assunta male, e su otto serie di prova TheTVDB aveva 119 sinossi italiane su 212 episodi, tutte irraggiungibili. Le sinossi di AnimeClick mancavano su ogni episodio con un accento nel titolo, perché l'identificativo salvato veniva rifiutato dal plugin stesso: il 13% degli episodi in prova. Una stagione intera poteva ricevere i titoli sfalsati di una posizione quando la tabella di AnimeClick contiene più righe di quante ne dichiari: ora la discordanza viene rilevata e serve la conferma del titolo del file, altrimenti l'episodio resta intatto. Inoltre: i titoli che ripetono solo il numero non vengono più scritti, la coda delle traduzioni non può più fermarsi in silenzio, e verso TheTVDB, TMDB e AniList c'è un passo minimo con rispetto delle richieste di rallentamento.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.4.5.0/AnimeClick.Plugin.zip",
-        "checksum": "79019B1EA778CB3639C434B9E8DC8601",
-        "timestamp": "2026-07-30T16:43:24Z"
-      },
-      {
-        "version": "0.4.4.0",
-        "changelog": "v0.4.4.0: audit del codice in tre giri, senza nuove funzionalità. Correttezza: le righe “Speciale” non diventano più episodi numerati con l'anno (prima spostavano la numerazione degli episodi successivi o rompevano la divisione automatica in stagioni), e il filtro sulle locandine a bassa risoluzione non si disattiva più da solo. Sicurezza: allow-list host HTTPS su tutti gli URL immagine (serie, film, episodi, stagioni e anteprime di ricerca), tetto di 15 minuti al Retry-After del server per non bloccare lo scraping fino al riavvio, impostazioni validate sul server e non solo nella pagina di configurazione. Robustezza: timeout e limiti di dimensione su tutte le chiamate di rete, budget sul recupero della lista episodi di TheTVDB, token TheTVDB scartato quando viene rifiutato invece di essere riusato per 24 ore, errori di chiave API e di rete ora visibili nel log invece che solo a livello Debug, un errore di scrittura della cache non fa più perdere i metadati dell'elemento, e cache per le foto degli autori.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.4.4.0/AnimeClick.Plugin.zip",
-        "checksum": "E02698DEC1EEE30610DB79D35F5F1E78",
-        "timestamp": "2026-07-29T21:48:05Z"
-      },
-      {
-        "version": "0.4.3.0",
-        "changelog": "v0.4.3.0: voce del plugin nella sidebar del pannello di controllo; banner del footer mostrato per intero; fix SSRF sugli URL immagine di serie/film (allow-list host HTTPS); HttpClient via IHttpClientFactory per evitare collisioni tra versioni; rimozione di memory leak nei lock, pulizia dello stato più efficiente e parsing/regex indipendenti dal locale; modello Ollama Cloud predefinito ora gpt-oss:20b-cloud con migrazione automatica.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.4.3.0/AnimeClick.Plugin.zip",
-        "checksum": "E25340D6ABB9AE893E709F4D0ADB1E96",
-        "timestamp": "2026-07-22T22:59:55Z"
-      },
-      {
-        "version": "0.4.2.0",
-        "changelog": "v0.4.2.0: AnimeClick diventa la prima fonte per le sinossi degli episodi, ignorando descrizioni vuote, segnaposto e commenti; fallback TheTVDB/TMDB/Ollama, matching indipendente dai titoli, cache e diagnostica aggiornate; README riscritto per l'utente finale.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.4.2.0/AnimeClick.Plugin.zip",
-        "checksum": "E27492F69C90193F6B43C2A321773FB5",
-        "timestamp": "2026-07-22T13:55:32Z"
-      },
-      {
-        "version": "0.4.1.0",
-        "changelog": "v0.4.1.0: Resolver episodi/stagioni v5 fail-safe con layout multipli, separazione tra episodi regolari e speciali, override deterministici e cache single-flight; diagnostica e frontend aggiornati con banner/footer; documentazione Ollama EN→IT ampliata.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.4.1.0/AnimeClick.Plugin.zip",
-        "checksum": "DFB6D3D0C457F4A18F4FC6FFC6F7A571",
-        "timestamp": "2026-07-22T01:27:38Z"
-      },
-      {
-        "version": "0.4.0.0",
-        "changelog": "v0.4.0.0: AnimeClick-first con authority layer lock-aware, resolver stagioni v4, metadati semantici estesi, coda asincrona Ollama con backoff e cache content-addressed, e fix E14-E26 per stagioni sintetiche.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.4.0.0/AnimeClick.Plugin.zip",
-        "checksum": "42991B98F57CAF246ADAEA832ECA465F",
-        "timestamp": "2026-07-21T22:20:52Z"
-      },
-      {
-        "version": "0.3.8.0",
-        "changelog": "v0.3.8.0: Fortificazione e ottimizzazione ricerca metadata. Filtro qualit\u00e0 immagini: MinPosterWidth (default 400px, ora in UI) \u2014 se AnimeClick fornisce locandina (o artwork) a bassa risoluzione viene automaticamente saltata e Jellyfin passa ad altri provider configurati (Fanart/AniList/TMDB). Probe efficiente con HTTP Range + cache. Search: cleaners robusti (sequel, fullwidth, &), scorer fuzzy migliorato, retry transienti nel client. Bugfix: versioning assembly corretto, UA dinamico, TvdbLanguage sanitizzato, Person images Order=100. Aggiornamenti UI e docs.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://raw.githubusercontent.com/iCosiSenpai/jellyfin-plugin-animeclick/v0.3.8.0/AnimeClick.Plugin.zip",
-        "checksum": "A31BD1E7B7020EB84D9E9981D7CD303E",
-        "timestamp": "2026-07-13T23:30:00Z"
-      },
-      {
-        "version": "0.3.7.0",
-        "changelog": "v0.3.7.0: Fix multi-stagione quando AnimeClick elenca episodi in blocco unico (es. The Asterisk War 24ep/2cour). Parser sintetizza SeasonNumber da <dt>Stagioni</dt> main-page. Matches S2 via seasonOrdinal.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.7.0/AnimeClick.Plugin.zip",
-        "checksum": "CF5C268066CA5FDC764D096567394CB8",
-        "timestamp": "2026-07-07T00:15:00Z"
-      },
-      {
-        "version": "0.3.6.0",
-        "changelog": "v0.3.6.0: Fix TVDB tvdb_id restituito come stringa (API v4 /search) + fallback al campo id. Gestione accenti italiani in ricerca AnimeClick (RemoveDiacritics su query e scorer). Timeout 30s su IdentifyAndRefresh con risposta graceful. Ollama ParseTranslatedContent gestisce \\uXXXX e surrogate pairs. Attribution TheTVDB (banner config + README).",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.6.0/AnimeClick.Plugin.zip",
-        "checksum": "50454798D3AA90633FB3F75611A46343",
-        "timestamp": "2026-07-06T15:05:00Z"
-      },
-      {
-        "version": "0.3.5.0",
-        "changelog": "v0.3.5.0: Fix TVDB search (type=series filter broken in v4 API, filter client-side).",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.5.0/AnimeClick.Plugin.zip",
-        "checksum": "1E93D402D33C6269EE7EEE5B67A7C837",
-        "timestamp": "2026-07-02T22:45:00Z"
-      },
-      {
-        "version": "0.3.4.0",
-        "changelog": "v0.3.4.0: Fix HTTP 415 sui pulsanti Test TMDB/Ollama/TVDB e Svuota cache. I POST dal frontend venivano inviati senza body e senza Content-Type, causando 415 da ASP.NET Core prima di contattare le API esterne.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.4.0/AnimeClick.Plugin.zip",
-        "checksum": "D20C6FA9134A8CD16C1CC99E5DACDC0C",
-        "timestamp": "2026-07-02T22:30:00Z"
-      },
-      {
-        "version": "0.3.3.0",
-        "changelog": "v0.3.3.0: Update logo to gatto.png and change title to AnimeClick Plugin",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.3.0/AnimeClick.Plugin.zip",
-        "checksum": "010AA086B6B7A20518255E9365DABDF4",
-        "timestamp": "2026-07-02T22:00:00Z"
-      },
-      {
-        "version": "0.3.2.0",
-        "changelog": "v0.3.2.0: Remake completo del frontend con architettura modulare in stile KometaThemes. CSS esterno (ac- design system, palette arancione), JS esterno (form dinamici, dirty-state, toast, modal), HTML bootstrapper minimale. Quattro tab (Overview, Metadati, Sinossi, Strumenti), hero con stat tile, sticky save bar, feature chips, provider test con live dot. Ogni impostazione mappata 1:1 al backend.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.2.0/AnimeClick.Plugin.zip",
-        "checksum": "5254C8FA04A6163C37A8CE51962BC9D4",
-        "timestamp": "2026-07-02T19:12:00Z"
-      },
-      {
-        "version": "0.3.1.0",
-        "changelog": "v0.3.1.0: Fix download immagini. GetImageResponse ora invia User-Agent/Referer (il CDN AnimeClick rifiutava le richieste senza UA \u2192 HTTP 403, locandine e foto staff non scaricate). Nuova opzione MinPosterWidth: scarta le locandine sotto la risoluzione minima e passa al provider successivo (Fanart/TMDB/AniList).",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.1.0/AnimeClick.Plugin.v0.3.1.0.zip",
-        "checksum": "62A95BCA593AA5FF00A7B1DDCDFF259D",
-        "timestamp": "2026-06-27T00:45:00Z"
-      },
-      {
-        "version": "0.3.0.0",
-        "changelog": "v0.3.0.0: Redesign completo del frontend \u2014 premium dashboard UI. Nuova interfaccia glassmorphism con gradienti animati, tipografia premium, micro-interazioni fluide, nuovi bottoni e badge. UX/UI migliorata con card pi\u00f9 eleganti e layout rivisitato.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.3.0.0/AnimeClick.Plugin.zip",
-        "checksum": "1CEE17BB5E7A26CB3A41BDC2AD2C1D35",
-        "timestamp": "2026-06-26T14:30:00Z"
-      },
-      {
-        "version": "0.2.11.0",
-        "changelog": "v0.2.11: Nuova dashboard premium glassmorphism con header sticky, tab bar iconata a pillole, tile stato provider, azioni rapide e save dock fisso. Ricerca impostazioni live e descrizioni toggleabili. Backend invariato.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.11.0/AnimeClick.Plugin.v0.2.11.0.zip",
-        "checksum": "80A923EB65E8B1454A8A8CA824479A95",
-        "timestamp": "2026-06-22T21:00:00Z"
-      },
-      {
-        "version": "0.2.10.0",
-        "changelog": "v0.2.10: Pagina di configurazione rinnovata. Quattro schede in alto (Metadati, Sinossi episodi, Ricerca, Strumenti) con card visive e icone. Rimossa la sezione diagnostica tecnica, sostituita da strumenti piu semplici: Identifica e Aggiorna, e Svuota cache con un clic. I test di connessione TMDB, Ollama e TVDB ora mostrano un badge Connesso o Errore invece del testo tecnico. Risolto il bug dei pulsanti di test che mostravano parentesi vuote.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.10.0/AnimeClick.Plugin.v0.2.10.0.zip",
-        "checksum": "A74476E890AAE22BFB856F8846DF90A3",
-        "timestamp": "2026-06-22T17:40:00Z"
-      },
-      {
-        "version": "0.2.9.0",
-        "changelog": "v0.2.9: TheTVDB come fonte preferita per le sinossi degli episodi in italiano, con traduzione diretta e zero carico sul NAS. Se TVDB non ha la traduzione, il plugin usa il fallback TMDB piu Ollama Cloud. Aggiunti i pulsanti di test TMDB, Ollama e TVDB per verificare le credenziali inserite con messaggi di errore dettagliati.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.9.0/AnimeClick.Plugin.v0.2.9.0.zip",
-        "checksum": "9F9D3E1E676BD25AFC4B6CF2471CCD37",
-        "timestamp": "2026-06-22T17:45:00Z"
-      },
-      {
-        "version": "0.2.8.0",
-        "changelog": "v0.2.8: AnimeClick ora fornisce solo i campi in italiano (titolo, trama, generi, tag, cast) e lascia agli altri provider i campi neutri come studio, anno e valutazione. Aggiunta la locandina italiana di AnimeClick come immagine di fallback quando AniList, Fanart o TMDB non hanno immagini. Sinossi degli episodi in italiano opzionali via TMDB piu Ollama Cloud.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.8.0/AnimeClick.Plugin.v0.2.8.0.zip",
-        "checksum": "A1D02A6D9E937F47E52B86952BD49603",
-        "timestamp": "2026-06-22T16:27:00Z"
-      },
-      {
-        "version": "0.2.7.0",
-        "changelog": "v0.2.7: AniList ID risolto durante OGNI scan, non solo nell'Identify manuale. Nuovo servizio AnimeClickAniListResolver (estratto da AnimeClickIdentifyController, registrato in DI, DRY). SeriesProvider e MovieProvider ora risolvono e scrivono ProviderIds[AniList] in GetMetadata a ogni scansione, usando il titolo originale (romaji) con fallback al titolo italiano: le pagine AnimeClick non espongono link MAL/AniList/AniDB/TMDB, quindi questo fallback e cio che permette all'ImageFetcher AniList di scaricare le copertine in automatico e fornisce ai provider a valle un ID stabile. Nota: Fanart per i film usa il TMDB ID, quindi abilita anche TheMovieDb come metadata fetcher nella libreria Anime Movie. Controller rifattorizzato per riusare il servizio + nuovi unit test su parsing JSON ed escaping GraphQL.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.7.0/AnimeClick.Plugin.v0.2.7.0.zip",
-        "checksum": "83B3C9A72111E27E1974B3E232C06540",
-        "timestamp": "2026-06-21T21:19:00Z"
-      },
-      {
-        "version": "0.2.6.0",
-        "changelog": "v0.2.6: Fix response body undefined (client JS leggeva PascalCase, ASP.NET Core serializza in camelCase) + fix RemoteImageQuery che passava providerName=string.Empty (filtrava per provider con nome vuoto, ritornando array vuoto per Primary/Backdrop/Logo/Art/Thumb). v0.2.6.0 usa providerName: null (tutti i provider) + IncludeDisabledProviders=true. Nuovo EnsureAniListIdAsync che interroga AniList GraphQL per titolo e salva l'AniList ID sull'item prima del download immagini (necessario perch\u00e9 AnimeClick non fornisce TMDB/IMDB/AniList ID, quindi senza AniList ID l'AniList ImageFetcher non pu\u00f2 fare lookup). DownloadedImages list ora visualizzata in modo leggibile nel result box della configPage.",
-        "targetAbi": "10.11.8.0",
-        "sourceUrl": "https://github.com/iCosiSenpai/jellyfin-plugin-animeclick/releases/download/v0.2.6.0/AnimeClick.Plugin.v0.2.6.0.zip",
-        "checksum": "D364E52154F544865354E4BED1A0DADD",
-        "timestamp": "2026-06-13T23:25:00Z"
       }
     ]
   },
@@ -389,7 +221,7 @@
       },
       {
         "version": "1.0.3.0",
-        "changelog": "v1.0.3.0: LibraryPattern now gates \u266a button + item UI (non-anime fix). IsItemEligible + /eligible + guards. Theme Finder: keyboard nav (arrows/Home/End/Enter/Esc), clear button, ARIA (listbox/activedescendant), strong focus/active/hover visuals. All prior harden + filters included. Version per AGENTS.",
+        "changelog": "v1.0.3.0: LibraryPattern now gates ♪ button + item UI (non-anime fix). IsItemEligible + /eligible + guards. Theme Finder: keyboard nav (arrows/Home/End/Enter/Esc), clear button, ARIA (listbox/activedescendant), strong focus/active/hover visuals. All prior harden + filters included. Version per AGENTS.",
         "targetAbi": "10.11.8.0",
         "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v1.0.3.0/KometaThemes.zip",
         "checksum": "5a2368ea6807e871c92acfcedffbc5c4",

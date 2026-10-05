@@ -4,7 +4,7 @@ Questa è la repository ufficiale (catalogo) dei plugin sviluppati da [iCosiSenp
 
 ## Plugin Disponibili
 
-1. **AnimeClick Metadata**: Provider di metadati anime in italiano basato su AnimeClick.it.
+1. **AnimeClick Metadata**: Provider di metadati anime in italiano basato su AnimeClick.it. **Richiede Jellyfin 12.0 o successivo**: le versioni 0.x per Jellyfin 10.x sono obsolete e non vengono più distribuite.
 2. **KometaThemes**: Scarica automaticamente le sigle (OP/ED) degli anime da animethemes.moe con supporto multi-provider.
 
 ## Come installare la repository su Jellyfin
