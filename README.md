@@ -5,7 +5,7 @@ Questa è la repository ufficiale (catalogo) dei plugin sviluppati da [iCosiSenp
 ## Plugin Disponibili
 
 1. **AnimeClick Metadata**: Provider di metadati anime in italiano basato su AnimeClick.it. **Richiede Jellyfin 12.0 o successivo**: le versioni 0.x per Jellyfin 10.x sono obsolete e non vengono più distribuite.
-2. **KometaThemes**: Scarica automaticamente le sigle (OP/ED) degli anime da animethemes.moe con supporto multi-provider.
+2. **KometaThemes**: Mette le sigle (OP/ED) degli anime da animethemes.moe sulle pagine di serie, stagioni e film. Richiede Jellyfin 12.
 
 ## Come installare la repository su Jellyfin
 
@@ -24,4 +24,4 @@ Per aggiungere questa repository al tuo server Jellyfin e poter installare i plu
 
 Se riscontri problemi o hai suggerimenti per uno dei plugin, apri una Issue nella repository specifica del plugin:
 - [AnimeClick Plugin](https://github.com/iCosiSenpai/jellyfin-plugin-animeclick)
-- [KometaThemes Plugin](https://github.com/iCosiSenpai/KometaTheme)
+- [KometaThemes Plugin](https://github.com/iCosiSenpai/KometaThemes)
