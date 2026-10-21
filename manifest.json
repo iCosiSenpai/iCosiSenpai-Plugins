@@ -96,9 +96,17 @@
     "name": "KometaThemes",
     "guid": "48c98707-45d1-43ac-94b8-f74d875ad29c",
     "imageUrl": "https://raw.githubusercontent.com/iCosiSenpai/KometaThemes/main/Jellyfin.Plugin.KometaThemes/Web/assets/kometathemes-icon.png",
-    "description": "KometaThemes scarica le sigle di apertura e chiusura degli anime da animethemes.moe e le mette sulle pagine di serie, stagioni e film di Jellyfin. Ogni stagione riceve le sue sigle tramite i seguiti di AniList, i file portano il titolo del brano, e una pagina nel pannello mostra e controlla ogni abbinamento. Richiede Jellyfin 12.",
+    "description": "KometaThemes scarica le sigle di apertura e chiusura degli anime da animethemes.moe e le mette sulle pagine di serie, stagioni e film di Jellyfin. Ogni stagione riceve le sue sigle, abbinata alle voci dello stesso franchise su animethemes.moe, i file portano il titolo del brano, e una pagina nel pannello mostra e controlla ogni abbinamento. Richiede Jellyfin 12.",
     "overview": "Le sigle degli anime sulle pagine di Jellyfin.",
     "versions": [
+      {
+        "version": "2.1.0.0",
+        "changelog": "Le stagioni vengono abbinate alle voci che animethemes.moe raggruppa con la serie, per data di uscita, numero di episodi, numero nel titolo e ordine del franchise: funziona anche senza AniList (la cui API è spenta dal 21 ottobre 2026) e senza date, unisce i due cour di una stessa stagione saltando i riassunti, divide una voce lunga tra più stagioni dando a ciascuna le sigle dei suoi episodi e salta film, OVA e spin-off nel mezzo. Corretto l'abbinamento per titolo, che nella 2.0 non funzionava mai: un filtro sbagliato restituiva le voci senza sigle, e un abbinamento manuale cancellava i file invece di scaricarli. La ricerca per titolo ora legge sinonimi e abbreviazioni, uniforma le traslitterazioni, usa il nome della cartella e l'anno e distingue film, serie e remake. Aperture e chiusure hanno limiti separati, quindi le serie lunghe tengono le ending; si usano le versioni che sfumano nell'episodio quando manca una pulita e si evitano i video con sottotitoli impressi. Jellyfin registra le sigle con un aggiornamento leggero che non interroga i provider di metadati. Nella pagina dell'anime un elenco Stagioni mostra come suona ogni stagione e Cambia abbinamento propone prima le voci dello stesso franchise; corrette le locandine stirate nella libreria. Tolti gli ID aniSearch, che animethemes.moe non conserva. Richiede Jellyfin 12.0 o successivo.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/iCosiSenpai/KometaThemes/releases/download/v2.1.0.0/KometaThemes.zip",
+        "checksum": "1eef6f803f75511daa20f03468a147c5",
+        "timestamp": "2026-10-21T20:17:05Z"
+      },
       {
         "version": "2.0.0.0",
         "changelog": "Versione per Jellyfin 12, con un'interfaccia nuova scritta da zero: libreria, pagina dell'anime con una scheda per stagione, mappa degli episodi, anteprima e scelta delle singole sigle, abbinamento manuale, attività, impostazioni e primo avvio guidato, più il pulsante nelle pagine degli anime. Ogni stagione riceve le sue sigle tramite i seguiti di AniList, solo quando anno ed episodi coincidono. I file prendono il titolo del brano e quelli della 1.x vengono rinominati, non riscaricati; le copie theme.mp3 duplicate vengono tolte. Corretti la sincronizzazione che ignorava gli abbinamenti manuali, il refresh completo dei metadati dopo ogni download, la sincronizzazione interrotta da un errore di rete, i tentativi infiniti sugli anime non trovati e i file cancellati a vicenda. Tolti playlist .m3u, prova a secco, preset e visualizzatore dei log. Richiede Jellyfin 12.0 o successivo.",
